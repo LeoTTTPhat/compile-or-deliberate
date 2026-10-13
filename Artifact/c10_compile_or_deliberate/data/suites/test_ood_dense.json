@@ -1,0 +1,3203 @@
+[
+{
+"scenario": {
+"id": "V0001",
+"family": "V",
+"description": "family V, onset 4.74 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 23.472201105659877}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 4.742193564667083,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+23.472201105659877
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 23.472201105659877,
+"onset": 4.742193564667083
+}
+},
+"seeds": [
+1001
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0002",
+"family": "V",
+"description": "family V, onset 5.12 h, params {'valve': 'd_feed_stuck', 'mag': 0.0, 'prod': 26.491419589171045}",
+"gt": [
+"valve_stiction_or_stuck",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "d_feed_valve",
+"kind": "stuck",
+"start_h": 5.118447889871706,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.491419589171045
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "d_feed_stuck",
+"mag": 0.0,
+"prod": 26.491419589171045,
+"onset": 5.118447889871706
+}
+},
+"seeds": [
+1002
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0003",
+"family": "V",
+"description": "family V, onset 3.49 h, params {'valve': 'rcw_cap', 'mag': 28.621804595605813, 'prod': 25.83948940226463}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 3.4933383095355093,
+"magnitude": 28.621804595605813,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.83948940226463
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_cap",
+"mag": 28.621804595605813,
+"prod": 25.83948940226463,
+"onset": 3.4933383095355093
+}
+},
+"seeds": [
+1003
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0005",
+"family": "V",
+"description": "family V, onset 4.21 h, params {'valve': 'rcw_stuck', 'mag': 0.0, 'prod': 24.70488665854451}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "stuck",
+"start_h": 4.206942069053367,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.70488665854451
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_stuck",
+"mag": 0.0,
+"prod": 24.70488665854451,
+"onset": 4.206942069053367
+}
+},
+"seeds": [
+1005
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0007",
+"family": "V",
+"description": "family V, onset 4.60 h, params {'valve': 'd_feed_stuck', 'mag': 0.0, 'prod': 24.845621932011696}",
+"gt": [
+"valve_stiction_or_stuck",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "d_feed_valve",
+"kind": "stuck",
+"start_h": 4.603307089500017,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.845621932011696
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "d_feed_stuck",
+"mag": 0.0,
+"prod": 24.845621932011696,
+"onset": 4.603307089500017
+}
+},
+"seeds": [
+1007
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0014",
+"family": "V",
+"description": "family V, onset 2.33 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 23.091595728574806}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 2.33194636158576,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 23.091595728574806,
+"onset": 2.33194636158576
+}
+},
+"seeds": [
+1014
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0017",
+"family": "V",
+"description": "family V, onset 5.51 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 22.280211224318528}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 5.508695820295997,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+22.280211224318528
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 22.280211224318528,
+"onset": 5.508695820295997
+}
+},
+"seeds": [
+1017
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0018",
+"family": "V",
+"description": "family V, onset 5.82 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 25.17100449219199}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 5.822226347356162,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.17100449219199
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 25.17100449219199,
+"onset": 5.822226347356162
+}
+},
+"seeds": [
+1018
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0019",
+"family": "V",
+"description": "family V, onset 4.58 h, params {'valve': 'd_feed_stuck', 'mag': 0.0, 'prod': 24.976396760013575}",
+"gt": [
+"valve_stiction_or_stuck",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "d_feed_valve",
+"kind": "stuck",
+"start_h": 4.576934451003554,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.976396760013575
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "d_feed_stuck",
+"mag": 0.0,
+"prod": 24.976396760013575,
+"onset": 4.576934451003554
+}
+},
+"seeds": [
+1019
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0020",
+"family": "V",
+"description": "family V, onset 1.09 h, params {'valve': 'rcw_cap', 'mag': 33.29491938073038, 'prod': 26.834307311597097}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 1.0928376298222928,
+"magnitude": 33.29491938073038,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.834307311597097
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_cap",
+"mag": 33.29491938073038,
+"prod": 26.834307311597097,
+"onset": 1.0928376298222928
+}
+},
+"seeds": [
+1020
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0021",
+"family": "V",
+"description": "family V, onset 1.73 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 22.059699263693766}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 1.7272182418300117,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+22.059699263693766
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 22.059699263693766,
+"onset": 1.7272182418300117
+}
+},
+"seeds": [
+1021
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0026",
+"family": "V",
+"description": "family V, onset 1.70 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 24.43880530753032}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 1.6986888753280485,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.43880530753032
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 24.43880530753032,
+"onset": 1.6986888753280485
+}
+},
+"seeds": [
+1026
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0027",
+"family": "V",
+"description": "family V, onset 5.72 h, params {'valve': 'rcw_cap', 'mag': 28.460129918813635, 'prod': 26.74711319448146}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 5.7213096885213695,
+"magnitude": 28.460129918813635,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.74711319448146
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_cap",
+"mag": 28.460129918813635,
+"prod": 26.74711319448146,
+"onset": 5.7213096885213695
+}
+},
+"seeds": [
+1027
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0029",
+"family": "V",
+"description": "family V, onset 4.17 h, params {'valve': 'd_feed_stuck', 'mag': 0.0, 'prod': 26.313192228305077}",
+"gt": [
+"valve_stiction_or_stuck",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "d_feed_valve",
+"kind": "stuck",
+"start_h": 4.170805611755784,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.313192228305077
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "d_feed_stuck",
+"mag": 0.0,
+"prod": 26.313192228305077,
+"onset": 4.170805611755784
+}
+},
+"seeds": [
+1029
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0030",
+"family": "V",
+"description": "family V, onset 5.09 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 25.040570846920122}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 5.092151121735861,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.040570846920122
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 25.040570846920122,
+"onset": 5.092151121735861
+}
+},
+"seeds": [
+1030
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0035",
+"family": "V",
+"description": "family V, onset 2.69 h, params {'valve': 'rcw_cap', 'mag': 28.268674254149005, 'prod': 24.867292624980806}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 2.6942721080087617,
+"magnitude": 28.268674254149005,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.867292624980806
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_cap",
+"mag": 28.268674254149005,
+"prod": 24.867292624980806,
+"onset": 2.6942721080087617
+}
+},
+"seeds": [
+1035
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0036",
+"family": "V",
+"description": "family V, onset 3.09 h, params {'valve': 'rcw_stuck', 'mag': 0.0, 'prod': 26.167894934901316}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "stuck",
+"start_h": 3.0892639740791212,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.167894934901316
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_stuck",
+"mag": 0.0,
+"prod": 26.167894934901316,
+"onset": 3.0892639740791212
+}
+},
+"seeds": [
+1036
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0037",
+"family": "V",
+"description": "family V, onset 3.80 h, params {'valve': 'rcw_cap', 'mag': 33.31941950526208, 'prod': 25.825061197655792}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 3.7972305175094037,
+"magnitude": 33.31941950526208,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.825061197655792
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_cap",
+"mag": 33.31941950526208,
+"prod": 25.825061197655792,
+"onset": 3.7972305175094037
+}
+},
+"seeds": [
+1037
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0038",
+"family": "V",
+"description": "family V, onset 1.60 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 22.731265606680306}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 1.5997482070568871,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 22.731265606680306,
+"onset": 1.5997482070568871
+}
+},
+"seeds": [
+1038
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0039",
+"family": "V",
+"description": "family V, onset 4.44 h, params {'valve': 'rcw_stuck', 'mag': 0.0, 'prod': 24.608082388968917}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "stuck",
+"start_h": 4.444852069094668,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.608082388968917
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_stuck",
+"mag": 0.0,
+"prod": 24.608082388968917,
+"onset": 4.444852069094668
+}
+},
+"seeds": [
+1039
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "V0000",
+"family": "V",
+"description": "family V, onset 5.06 h, params {'valve': 'd_feed_stuck', 'mag': 0.0, 'prod': 21.4591523319779}",
+"gt": [
+"valve_stiction_or_stuck",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "d_feed_valve",
+"kind": "stuck",
+"start_h": 5.061395169152076,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+21.4591523319779
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "d_feed_stuck",
+"mag": 0.0,
+"prod": 21.4591523319779,
+"onset": 5.061395169152076
+}
+},
+"seeds": [
+1000
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "V0006",
+"family": "V",
+"description": "family V, onset 2.14 h, params {'valve': 'rcw_cap', 'mag': 29.24088830511992, 'prod': 21.186720983949158}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 2.1372434403670546,
+"magnitude": 29.24088830511992,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+21.186720983949158
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_cap",
+"mag": 29.24088830511992,
+"prod": 21.186720983949158,
+"onset": 2.1372434403670546
+}
+},
+"seeds": [
+1006
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "V0008",
+"family": "V",
+"description": "family V, onset 5.24 h, params {'valve': 'd_feed_stuck', 'mag': 0.0, 'prod': 21.184657091128102}",
+"gt": [
+"valve_stiction_or_stuck",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "d_feed_valve",
+"kind": "stuck",
+"start_h": 5.23912649400432,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+21.184657091128102
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "d_feed_stuck",
+"mag": 0.0,
+"prod": 21.184657091128102,
+"onset": 5.23912649400432
+}
+},
+"seeds": [
+1008
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "V0012",
+"family": "V",
+"description": "family V, onset 3.58 h, params {'valve': 'purge_stuck', 'mag': 0.0, 'prod': 25.46267923429185}",
+"gt": [
+"valve_stiction_or_stuck"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "purge_valve",
+"kind": "stuck",
+"start_h": 3.5750215256478497,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.46267923429185
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "purge_stuck",
+"mag": 0.0,
+"prod": 25.46267923429185,
+"onset": 3.5750215256478497
+}
+},
+"seeds": [
+1012
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "V0013",
+"family": "V",
+"description": "family V, onset 4.77 h, params {'valve': 'rcw_cap', 'mag': 37.07714642318508, 'prod': 26.583713957081184}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 4.773659514081434,
+"magnitude": 37.07714642318508,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.583713957081184
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "rcw_cap",
+"mag": 37.07714642318508,
+"prod": 26.583713957081184,
+"onset": 4.773659514081434
+}
+},
+"seeds": [
+1013
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "V0016",
+"family": "V",
+"description": "family V, onset 4.50 h, params {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 21.841074822586453}",
+"gt": [
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 4.497206785185066,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+21.841074822586453
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 21.841074822586453,
+"onset": 4.497206785185066
+}
+},
+"seeds": [
+1016
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "C0000",
+"family": "C",
+"description": "family C, onset 5.02 h, params {'a': {'idv': 'idv_13', 'mag': 1.0, 'prod': 28.620977343865675}, 'b': {'valve': 'd_feed_stuck', 'mag': 0.0, 'prod': 21.485113781289147}}",
+"gt": [
+"compound_fault",
+"kinetics_drift",
+"operating_point_change",
+"valve_stiction_or_stuck",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 5.023264608610737,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "d_feed_valve",
+"kind": "stuck",
+"start_h": 5.511291186800811,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.620977343865675
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 28.620977343865675
+},
+"b": {
+"valve": "d_feed_stuck",
+"mag": 0.0,
+"prod": 21.485113781289147
+},
+"onset": 5.023264608610737
+}
+},
+"seeds": [
+1000
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0001",
+"family": "C",
+"description": "family C, onset 4.41 h, params {'a': {'idv': 'idv_04', 'mag': 1.0, 'prod': 25.52875934729873}, 'b': {'valve': 'ccw_stuck', 'mag': 0.0, 'prod': 22.265624898704164}}",
+"gt": [
+"compound_fault",
+"reactor_cooling_fault",
+"operating_point_change",
+"valve_stiction_or_stuck",
+"condenser_cooling_fault"
+],
+"idv_events": [
+{
+"idv": "idv_04",
+"start_h": 4.406059215434909,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "separator_cooling_water_valve",
+"kind": "stuck",
+"start_h": 5.5693517371011385,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.52875934729873
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_04",
+"mag": 1.0,
+"prod": 25.52875934729873
+},
+"b": {
+"valve": "ccw_stuck",
+"mag": 0.0,
+"prod": 22.265624898704164
+},
+"onset": 4.406059215434909
+}
+},
+"seeds": [
+1001
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0002",
+"family": "C",
+"description": "family C, onset 3.00 h, params {'a': {'idv': 'idv_05', 'mag': 1.0, 'prod': 28.92359441332038}, 'b': {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -12.231918785582645}}",
+"gt": [
+"compound_fault",
+"condenser_cooling_fault",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_05",
+"start_h": 2.9978118236294855,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 3.352296926972129,
+"magnitude": -12.231918785582645,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.92359441332038
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_05",
+"mag": 1.0,
+"prod": 28.92359441332038
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -12.231918785582645
+},
+"onset": 2.9978118236294855
+}
+},
+"seeds": [
+1002
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0004",
+"family": "C",
+"description": "family C, onset 1.04 h, params {'a': {'dur': 5.440277921023277, 'prod': 27.52116464080945, 'extra': 'idv_07'}, 'b': {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -89.46565106478677}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"feed_loss_or_header_pressure",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.0431856539500326,
+"magnitude": 1.0,
+"end_h": 6.48346357497331
+},
+{
+"idv": "idv_07",
+"start_h": 2.0177420424029875,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 3.577705003047358,
+"magnitude": -89.46565106478677,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.52116464080945
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": 5.440277921023277,
+"prod": 27.52116464080945,
+"extra": "idv_07"
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -89.46565106478677
+},
+"onset": 1.0431856539500326
+}
+},
+"seeds": [
+1004
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0006",
+"family": "C",
+"description": "family C, onset 3.20 h, params {'a': {'idv': 'idv_13', 'mag': 1.0, 'prod': 24.91141596005265}, 'b': {'meas': 'reactor_temperature', 'kind': 'freeze', 'mag': 0.0}}",
+"gt": [
+"compound_fault",
+"kinetics_drift",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 3.20424710691013,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "freeze",
+"start_h": 4.027508728487667,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.91141596005265
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 24.91141596005265
+},
+"b": {
+"meas": "reactor_temperature",
+"kind": "freeze",
+"mag": 0.0
+},
+"onset": 3.20424710691013
+}
+},
+"seeds": [
+1006
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0008",
+"family": "C",
+"description": "family C, onset 3.57 h, params {'a': {'dur': 5.14747856656409, 'prod': 28.17532481960894, 'extra': 'none'}, 'b': {'valve': 'rcw_cap', 'mag': 32.99109088669104, 'prod': 24.926110344441604}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"operating_point_change",
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.5711726560784047,
+"magnitude": 1.0,
+"end_h": 8.718651222642496
+}
+],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "cap_max",
+"start_h": 4.01009064548582,
+"magnitude": 32.99109088669104,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.17532481960894
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": 5.14747856656409,
+"prod": 28.17532481960894,
+"extra": "none"
+},
+"b": {
+"valve": "rcw_cap",
+"mag": 32.99109088669104,
+"prod": 24.926110344441604
+},
+"onset": 3.5711726560784047
+}
+},
+"seeds": [
+1008
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0015",
+"family": "C",
+"description": "family C, onset 4.44 h, params {'a': {'idv': 'idv_13', 'mag': 1.0, 'prod': 27.047942526101465}, 'b': {'meas': 'reactor_temperature', 'kind': 'drift', 'mag': -1.850649748947726}}",
+"gt": [
+"compound_fault",
+"kinetics_drift",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 4.443959677607461,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "drift",
+"start_h": 5.1025307419966905,
+"magnitude": -1.850649748947726,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.047942526101465
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 27.047942526101465
+},
+"b": {
+"meas": "reactor_temperature",
+"kind": "drift",
+"mag": -1.850649748947726
+},
+"onset": 4.443959677607461
+}
+},
+"seeds": [
+1015
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0016",
+"family": "C",
+"description": "family C, onset 1.02 h, params {'a': {'idv': 'idv_17', 'mag': 1.0, 'prod': 26.19138281366988}, 'b': {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -24.65541752157698}}",
+"gt": [
+"compound_fault",
+"heat_transfer_degradation",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_17",
+"start_h": 1.0245366012724824,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 2.251073476382241,
+"magnitude": -24.65541752157698,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.19138281366988
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_17",
+"mag": 1.0,
+"prod": 26.19138281366988
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -24.65541752157698
+},
+"onset": 1.0245366012724824
+}
+},
+"seeds": [
+1016
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0017",
+"family": "C",
+"description": "family C, onset 3.06 h, params {'a': {'idv': 'idv_17', 'mag': 1.0, 'prod': 27.389302832758947}, 'b': {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -14.796416570992173}}",
+"gt": [
+"compound_fault",
+"heat_transfer_degradation",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_17",
+"start_h": 3.063529151901169,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 5.937678901218664,
+"magnitude": -14.796416570992173,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.389302832758947
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_17",
+"mag": 1.0,
+"prod": 27.389302832758947
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -14.796416570992173
+},
+"onset": 3.063529151901169
+}
+},
+"seeds": [
+1017
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0019",
+"family": "C",
+"description": "family C, onset 2.80 h, params {'a': {'dur': 2.077262426270081, 'prod': 21.278726302954738, 'extra': 'none'}, 'b': {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -28.11486733648569}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 2.8041978476199465,
+"magnitude": 1.0,
+"end_h": 4.881460273890028
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 3.3718972495994346,
+"magnitude": -28.11486733648569,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+21.278726302954738
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": 2.077262426270081,
+"prod": 21.278726302954738,
+"extra": "none"
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -28.11486733648569
+},
+"onset": 2.8041978476199465
+}
+},
+"seeds": [
+1019
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0020",
+"family": "C",
+"description": "family C, onset 4.02 h, params {'a': {'idv': 'idv_17', 'mag': 1.0, 'prod': 24.868804756824957}, 'b': {'valve': 'rcw_stuck', 'mag': 0.0, 'prod': 22.003065448871904}}",
+"gt": [
+"compound_fault",
+"heat_transfer_degradation",
+"operating_point_change",
+"valve_stiction_or_stuck",
+"reactor_cooling_fault"
+],
+"idv_events": [
+{
+"idv": "idv_17",
+"start_h": 4.0156076377782295,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "reactor_cooling_water_valve",
+"kind": "stuck",
+"start_h": 4.1544536816525595,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.868804756824957
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_17",
+"mag": 1.0,
+"prod": 24.868804756824957
+},
+"b": {
+"valve": "rcw_stuck",
+"mag": 0.0,
+"prod": 22.003065448871904
+},
+"onset": 4.0156076377782295
+}
+},
+"seeds": [
+1020
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0023",
+"family": "C",
+"description": "family C, onset 3.62 h, params {'a': {'dur': 3.501828046509005, 'prod': 20.80734949264938, 'extra': 'none'}, 'b': {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -19.466310577434122}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.6187382607935894,
+"magnitude": 1.0,
+"end_h": 7.120566307302594
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 5.610507654654915,
+"magnitude": -19.466310577434122,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.80734949264938
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": 3.501828046509005,
+"prod": 20.80734949264938,
+"extra": "none"
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -19.466310577434122
+},
+"onset": 3.6187382607935894
+}
+},
+"seeds": [
+1023
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0026",
+"family": "C",
+"description": "family C, onset 3.58 h, params {'a': {'dur': 4.60802859796592, 'prod': 23.32838791152757, 'extra': 'idv_07'}, 'b': {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -92.76289192053578}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"feed_loss_or_header_pressure",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.5782769053856223,
+"magnitude": 1.0,
+"end_h": 8.186305503351543
+},
+{
+"idv": "idv_07",
+"start_h": 5.321835809542989,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 6.455748679973566,
+"magnitude": -92.76289192053578,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": 4.60802859796592,
+"prod": 23.32838791152757,
+"extra": "idv_07"
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -92.76289192053578
+},
+"onset": 3.5782769053856223
+}
+},
+"seeds": [
+1026
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0028",
+"family": "C",
+"description": "family C, onset 3.63 h, params {'a': {'dur': inf, 'prod': 22.64294741129292, 'extra': 'none'}, 'b': {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -151.2007812391224}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.6257074728479717,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 6.0093481305150345,
+"magnitude": -151.2007812391224,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": Infinity,
+"prod": 22.64294741129292,
+"extra": "none"
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -151.2007812391224
+},
+"onset": 3.6257074728479717
+}
+},
+"seeds": [
+1028
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0029",
+"family": "C",
+"description": "family C, onset 4.32 h, params {'a': {'dur': inf, 'prod': 23.01158597091549, 'extra': 'idv_07'}, 'b': {'valve': 'purge_stuck', 'mag': 0.0, 'prod': 21.412559393527836}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"feed_loss_or_header_pressure",
+"valve_stiction_or_stuck"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 4.3196019855465835,
+"magnitude": 1.0,
+"end_h": null
+},
+{
+"idv": "idv_07",
+"start_h": 4.374474402214806,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "purge_valve",
+"kind": "stuck",
+"start_h": 6.350462672371229,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": Infinity,
+"prod": 23.01158597091549,
+"extra": "idv_07"
+},
+"b": {
+"valve": "purge_stuck",
+"mag": 0.0,
+"prod": 21.412559393527836
+},
+"onset": 4.3196019855465835
+}
+},
+"seeds": [
+1029
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0032",
+"family": "C",
+"description": "family C, onset 5.23 h, params {'a': {'dur': 5.766490394252102, 'prod': 28.811633927351124, 'extra': 'idv_07'}, 'b': {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -22.732945408949536}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"feed_loss_or_header_pressure",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.230131858053333,
+"magnitude": 1.0,
+"end_h": 10.996622252305436
+},
+{
+"idv": "idv_07",
+"start_h": 6.763491545522802,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 8.168624065060078,
+"magnitude": -22.732945408949536,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.811633927351124
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": 5.766490394252102,
+"prod": 28.811633927351124,
+"extra": "idv_07"
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -22.732945408949536
+},
+"onset": 5.230131858053333
+}
+},
+"seeds": [
+1032
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0033",
+"family": "C",
+"description": "family C, onset 5.47 h, params {'a': {'dur': inf, 'prod': 23.142560637521775, 'extra': 'none'}, 'b': {'valve': 'purge_stuck', 'mag': 0.0, 'prod': 23.821921445438395}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"valve_stiction_or_stuck"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.474874460530591,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "purge_valve",
+"kind": "stuck",
+"start_h": 6.707359599867526,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": Infinity,
+"prod": 23.142560637521775,
+"extra": "none"
+},
+"b": {
+"valve": "purge_stuck",
+"mag": 0.0,
+"prod": 23.821921445438395
+},
+"onset": 5.474874460530591
+}
+},
+"seeds": [
+1033
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0034",
+"family": "C",
+"description": "family C, onset 5.28 h, params {'a': {'dur': inf, 'prod': 24.88135654458999, 'extra': 'idv_02'}, 'b': {'meas': 'reactor_pressure', 'kind': 'freeze', 'mag': 0.0}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.278089566019013,
+"magnitude": 1.0,
+"end_h": null
+},
+{
+"idv": "idv_02",
+"start_h": 5.515730194676126,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "freeze",
+"start_h": 5.760879582953532,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.88135654458999
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": Infinity,
+"prod": 24.88135654458999,
+"extra": "idv_02"
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "freeze",
+"mag": 0.0
+},
+"onset": 5.278089566019013
+}
+},
+"seeds": [
+1034
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0036",
+"family": "C",
+"description": "family C, onset 2.08 h, params {'a': {'dur': inf, 'prod': 20.01269817546792, 'extra': 'idv_07'}, 'b': {'meas': 'reactor_temperature', 'kind': 'bias', 'mag': -4.926306480034464}}",
+"gt": [
+"compound_fault",
+"feed_composition_upset",
+"feed_loss_or_header_pressure",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 2.075918418003803,
+"magnitude": 1.0,
+"end_h": null
+},
+{
+"idv": "idv_07",
+"start_h": 2.961623845338977,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "bias",
+"start_h": 2.7412574018323443,
+"magnitude": -4.926306480034464,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.01269817546792
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"dur": Infinity,
+"prod": 20.01269817546792,
+"extra": "idv_07"
+},
+"b": {
+"meas": "reactor_temperature",
+"kind": "bias",
+"mag": -4.926306480034464
+},
+"onset": 2.075918418003803
+}
+},
+"seeds": [
+1036
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0039",
+"family": "C",
+"description": "family C, onset 2.09 h, params {'a': {'idv': 'idv_14', 'mag': 1.0, 'prod': 27.070831990896004}, 'b': {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -34.69404669662775}}",
+"gt": [
+"compound_fault",
+"valve_stiction_or_stuck",
+"reactor_cooling_fault",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_14",
+"start_h": 2.085618077350759,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 4.473873555198409,
+"magnitude": -34.69404669662775,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.070831990896004
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_14",
+"mag": 1.0,
+"prod": 27.070831990896004
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -34.69404669662775
+},
+"onset": 2.085618077350759
+}
+},
+"seeds": [
+1039
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "C0003",
+"family": "C",
+"description": "family C, onset 5.23 h, params {'a': {'idv': 'idv_04', 'mag': 1.0, 'prod': 26.590048715213452}, 'b': {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -93.09658496152989}}",
+"gt": [
+"compound_fault",
+"reactor_cooling_fault",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_04",
+"start_h": 5.232901937785413,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 8.095997960070171,
+"magnitude": -93.09658496152989,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.590048715213452
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_04",
+"mag": 1.0,
+"prod": 26.590048715213452
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -93.09658496152989
+},
+"onset": 5.232901937785413
+}
+},
+"seeds": [
+1003
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "C0010",
+"family": "C",
+"description": "family C, onset 5.75 h, params {'a': {'idv': 'idv_13', 'mag': 1.0, 'prod': 25.170951799383573}, 'b': {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -161.26418787029837}}",
+"gt": [
+"compound_fault",
+"kinetics_drift",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 5.746469969726005,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 7.139008337124981,
+"magnitude": -161.26418787029837,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.170951799383573
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 25.170951799383573
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -161.26418787029837
+},
+"onset": 5.746469969726005
+}
+},
+"seeds": [
+1010
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "C0011",
+"family": "C",
+"description": "family C, onset 2.33 h, params {'a': {'idv': 'idv_14', 'mag': 1.0, 'prod': 27.8493511847152}, 'b': {'meas': 'reactor_temperature', 'kind': 'bias', 'mag': -4.638989938349476}}",
+"gt": [
+"compound_fault",
+"valve_stiction_or_stuck",
+"reactor_cooling_fault",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_14",
+"start_h": 2.331356545099286,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "bias",
+"start_h": 2.9764857686386708,
+"magnitude": -4.638989938349476,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.8493511847152
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_14",
+"mag": 1.0,
+"prod": 27.8493511847152
+},
+"b": {
+"meas": "reactor_temperature",
+"kind": "bias",
+"mag": -4.638989938349476
+},
+"onset": 2.331356545099286
+}
+},
+"seeds": [
+1011
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "C0012",
+"family": "C",
+"description": "family C, onset 4.51 h, params {'a': {'idv': 'idv_13', 'mag': 1.0, 'prod': 27.302329461264037}, 'b': {'meas': 'reactor_temperature', 'kind': 'bias', 'mag': -5.911069770326704}}",
+"gt": [
+"compound_fault",
+"kinetics_drift",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 4.505315978104688,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "bias",
+"start_h": 5.671856893963413,
+"magnitude": -5.911069770326704,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.302329461264037
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 27.302329461264037
+},
+"b": {
+"meas": "reactor_temperature",
+"kind": "bias",
+"mag": -5.911069770326704
+},
+"onset": 4.505315978104688
+}
+},
+"seeds": [
+1012
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "C0013",
+"family": "C",
+"description": "family C, onset 5.50 h, params {'a': {'idv': 'idv_17', 'mag': 1.0, 'prod': 28.042293230456426}, 'b': {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -190.46217112206196}}",
+"gt": [
+"compound_fault",
+"heat_transfer_degradation",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_17",
+"start_h": 5.499129523742031,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 8.448019319866741,
+"magnitude": -190.46217112206196,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.042293230456426
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_17",
+"mag": 1.0,
+"prod": 28.042293230456426
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -190.46217112206196
+},
+"onset": 5.499129523742031
+}
+},
+"seeds": [
+1013
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "C0021",
+"family": "C",
+"description": "family C, onset 1.98 h, params {'a': {'idv': 'idv_05', 'mag': 1.0, 'prod': 24.791461109171593}, 'b': {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -100.47549037407315}}",
+"gt": [
+"compound_fault",
+"condenser_cooling_fault",
+"operating_point_change",
+"sensor_fault"
+],
+"idv_events": [
+{
+"idv": "idv_05",
+"start_h": 1.978284723858211,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 3.995452398814731,
+"magnitude": -100.47549037407315,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.791461109171593
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"a": {
+"idv": "idv_05",
+"mag": 1.0,
+"prod": 24.791461109171593
+},
+"b": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -100.47549037407315
+},
+"onset": 1.978284723858211
+}
+},
+"seeds": [
+1021
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0000",
+"family": "K",
+"description": "family K, onset 4.41 h, params {'idv': 'idv_17', 'mag': 1.0, 'prod': 26.040665825931036}",
+"gt": [
+"heat_transfer_degradation",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_17",
+"start_h": 4.4107192177266885,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.040665825931036
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_17",
+"mag": 1.0,
+"prod": 26.040665825931036,
+"onset": 4.4107192177266885
+}
+},
+"seeds": [
+1000
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0001",
+"family": "K",
+"description": "family K, onset 1.70 h, params {'idv': 'idv_04', 'mag': 1.0, 'prod': 28.965014928569722}",
+"gt": [
+"reactor_cooling_fault",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_04",
+"start_h": 1.6962233187204552,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.965014928569722
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_04",
+"mag": 1.0,
+"prod": 28.965014928569722,
+"onset": 1.6962233187204552
+}
+},
+"seeds": [
+1001
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0002",
+"family": "K",
+"description": "family K, onset 4.00 h, params {'idv': 'idv_04', 'mag': 1.0, 'prod': 26.98138265738156}",
+"gt": [
+"reactor_cooling_fault",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_04",
+"start_h": 4.000721596093337,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.98138265738156
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_04",
+"mag": 1.0,
+"prod": 26.98138265738156,
+"onset": 4.000721596093337
+}
+},
+"seeds": [
+1002
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0003",
+"family": "K",
+"description": "family K, onset 3.88 h, params {'idv': 'idv_17', 'mag': 1.0, 'prod': 25.86782762523663}",
+"gt": [
+"heat_transfer_degradation",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_17",
+"start_h": 3.8791401415702937,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.86782762523663
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_17",
+"mag": 1.0,
+"prod": 25.86782762523663,
+"onset": 3.8791401415702937
+}
+},
+"seeds": [
+1003
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0004",
+"family": "K",
+"description": "family K, onset 4.21 h, params {'idv': 'idv_17', 'mag': 1.0, 'prod': 27.615533020513887}",
+"gt": [
+"heat_transfer_degradation",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_17",
+"start_h": 4.207636806021519,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.615533020513887
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_17",
+"mag": 1.0,
+"prod": 27.615533020513887,
+"onset": 4.207636806021519
+}
+},
+"seeds": [
+1004
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0005",
+"family": "K",
+"description": "family K, onset 4.22 h, params {'idv': 'idv_05', 'mag': 1.0, 'prod': 26.82105113878261}",
+"gt": [
+"condenser_cooling_fault",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_05",
+"start_h": 4.22090980355844,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.82105113878261
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_05",
+"mag": 1.0,
+"prod": 26.82105113878261,
+"onset": 4.22090980355844
+}
+},
+"seeds": [
+1005
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0006",
+"family": "K",
+"description": "family K, onset 4.35 h, params {'idv': 'idv_14', 'mag': 1.0, 'prod': 24.69760549270254}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_14",
+"start_h": 4.3531224925992165,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.69760549270254
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_14",
+"mag": 1.0,
+"prod": 24.69760549270254,
+"onset": 4.3531224925992165
+}
+},
+"seeds": [
+1006
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0007",
+"family": "K",
+"description": "family K, onset 4.73 h, params {'idv': 'idv_14', 'mag': 1.0, 'prod': 28.886844101322577}",
+"gt": [
+"valve_stiction_or_stuck",
+"reactor_cooling_fault",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_14",
+"start_h": 4.729623740360707,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.886844101322577
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_14",
+"mag": 1.0,
+"prod": 28.886844101322577,
+"onset": 4.729623740360707
+}
+},
+"seeds": [
+1007
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0008",
+"family": "K",
+"description": "family K, onset 2.14 h, params {'idv': 'idv_05', 'mag': 1.0, 'prod': 27.831280130510127}",
+"gt": [
+"condenser_cooling_fault",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_05",
+"start_h": 2.1447965630739882,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.831280130510127
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_05",
+"mag": 1.0,
+"prod": 27.831280130510127,
+"onset": 2.1447965630739882
+}
+},
+"seeds": [
+1008
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0009",
+"family": "K",
+"description": "family K, onset 2.41 h, params {'idv': 'idv_13', 'mag': 1.0, 'prod': 24.094466679122643}",
+"gt": [
+"kinetics_drift",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 2.414317692431457,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.094466679122643
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 24.094466679122643,
+"onset": 2.414317692431457
+}
+},
+"seeds": [
+1009
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0010",
+"family": "K",
+"description": "family K, onset 3.26 h, params {'idv': 'idv_13', 'mag': 1.0, 'prod': 25.684542301192362}",
+"gt": [
+"kinetics_drift",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 3.261289545163463,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.684542301192362
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 25.684542301192362,
+"onset": 3.261289545163463
+}
+},
+"seeds": [
+1010
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "K0011",
+"family": "K",
+"description": "family K, onset 3.44 h, params {'idv': 'idv_13', 'mag': 1.0, 'prod': 25.00782275658021}",
+"gt": [
+"kinetics_drift",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_13",
+"start_h": 3.4437785319845817,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.00782275658021
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_13",
+"mag": 1.0,
+"prod": 25.00782275658021,
+"onset": 3.4437785319845817
+}
+},
+"seeds": [
+1011
+],
+"label": "benign"
+}
+]

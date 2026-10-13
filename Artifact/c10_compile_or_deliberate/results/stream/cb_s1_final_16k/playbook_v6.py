@@ -1,0 +1,168 @@
+def playbook(f, mem):
+    
+    # Rule 1: Immediate trip limit violation - shutdown
+    if f["P_ttl"] < 0.25 or f["T_ttl"] < 0.25 or f["RL_ttl"] < 0.25 or f["SL_ttl"] < 0.25 or f["XL_ttl"] < 0.25:
+        return {"rule": "TRIP_VIOLATION", "diagnosis": "unknown", "why": "hard limit imminent", "action": {"type": "shutdown"}}
+    
+    # Rule 2: High pressure approaching trip - arm safety override
+    if f["P_margin"] < 200 and not f["armed_overrides"]:
+        return {"rule": "PRESSURE_APPROACHING_TRIP", "diagnosis": "unknown", "why": "pressure near limit", "action": {"type": "reconfigure", "components": ["safety_overrides"]}}
+    
+    # Rule 3: Pressure HIHI alarm - immediate action to reduce pressure
+    if f["A_PRESSURE_HIHI"]:
+        return {"rule": "PRESSURE_HIHI", "diagnosis": "sensor_fault", "why": "pressure too high", "action": {"type": "adjust_setpoints", "changes": {"reactor_pressure": min(2895, f["P_sp"] - 75)}}}
+    
+    # Rule 4: Temperature HIHI alarm - immediate action to reduce temperature
+    if f["A_TEMP_HIHI"]:
+        return {"rule": "TEMP_HIHI", "diagnosis": "sensor_fault", "why": "temperature too high", "action": {"type": "adjust_setpoints", "changes": {"reactor_temperature": min(128, f["T_sp"] - 3)}}}
+    
+    # Rule 5: Reactor temperature sensor fault detected by large residual and no trend change
+    if abs(f["T_resid"]) > 5 and f["T_slope"] < 0.1 and not mem.get("temperature_sensor_substituted"):
+        return {"rule": "TEMP_SENSOR_FAULT", "diagnosis": "sensor_fault", "why": "temperature sensor faulty", "action": {"type": "substitute_instrument", "measurement": "reactor_temperature", "method": "soft"}}
+    
+    # Rule 6: Reactor pressure sensor fault detected by large residual and no trend change
+    if abs(f["P_resid"]) > 50 and f["P_slope"] < 10 and not mem.get("pressure_sensor_substituted"):
+        return {"rule": "PRESSURE_SENSOR_FAULT", "diagnosis": "sensor_fault", "why": "pressure sensor faulty", "action": {"type": "substitute_instrument", "measurement": "reactor_pressure", "method": "soft"}}
+    
+    # Rule 7: Reactor level HI alarm with increasing trend - adjust setpoint
+    if f["A_RLEVEL_HI"] and f["RL_slope"] > 0:
+        return {"rule": "RLEVEL_HI", "diagnosis": "unknown", "why": "level rising", "action": {"type": "adjust_setpoints", "changes": {"reactor_level": max(75, f["RL_sp"] - 5)}}}
+    
+    # Rule 8: Separator level LO alarm with decreasing trend - adjust setpoint
+    if f["A_SLEVEL_LO"] and f["SL_slope"] < 0:
+        return {"rule": "SLEVEL_LO", "diagnosis": "unknown", "why": "level falling", "action": {"type": "adjust_setpoints", "changes": {"separator_level": min(50, f["SL_sp"] + 5)}}}
+    
+    # Rule 9: Product grade deviation - use composition control
+    if f["A_GRADE_DEV"] and not f["armed_composition"]:
+        return {"rule": "GRADE_DEV", "diagnosis": "feed_composition_upset", "why": "grade off target", "action": {"type": "reconfigure", "components": ["composition_control"]}}
+    
+    # Rule 10: Pressure HI alarm - reduce pressure setpoint
+    if f["A_PRESSURE_HI"]:
+        return {"rule": "PRESSURE_HI", "diagnosis": "sensor_fault", "why": "pressure high", "action": {"type": "adjust_setpoints", "changes": {"reactor_pressure": min(2895, f["P_sp"] - 20)}}}
+    
+    # Rule 11: Temperature HI alarm - reduce temperature setpoint
+    if f["A_TEMP_HI"]:
+        return {"rule": "TEMP_HI", "diagnosis": "sensor_fault", "why": "temperature high", "action": {"type": "adjust_setpoints", "changes": {"reactor_temperature": min(128, f["T_sp"] - 1)}}}
+    
+    # Rule 12: Reactor level LO alarm with decreasing trend - adjust setpoint
+    if f["A_RLEVEL_LO"] and f["RL_slope"] < 0:
+        return {"rule": "RLEVEL_LO", "diagnosis": "unknown", "why": "level falling", "action": {"type": "adjust_setpoints", "changes": {"reactor_level": min(85, f["RL_sp"] + 5)}}}
+    
+    # Rule 13: Separator level HI alarm with increasing trend - adjust setpoint
+    if f["A_SLEVEL_HI"] and f["SL_slope"] > 0:
+        return {"rule": "SLEVEL_HI", "diagnosis": "unknown", "why": "level rising", "action": {"type": "adjust_setpoints", "changes": {"separator_level": max(30, f["SL_sp"] - 5)}}}
+    
+    # Rule 14: Product rate deviation - reduce production rate if within bounds
+    if f["A_RATE_DEV"]:
+        new_rate = max(11, f["PROD_sp"] - 2)
+        if new_rate <= 26:
+            return {"rule": "RATE_DEV", "diagnosis": "unknown", "why": "rate off target", "action": {"type": "adjust_setpoints", "changes": {"production_rate": new_rate}}}
+    
+    # Rule 15: Reactor cooling water valve stuck - check for saturation
+    if "mv_r_cooling_water" in f["saturated"] and not mem.get("cooling_water_reconfigured"):
+        return {"rule": "COOLING_WATER_VALVE_STUCK", "diagnosis": "valve_stiction_or_stuck", "why": "cooling valve stuck", "action": {"type": "procedure", "name": "min_stable_park"}}
+    
+    # Rule 16: Feed composition upset detected by large deviation in yA and increasing pressure slope
+    if f["yA_dev_nom"] < -10 and f["P_slope"] > 20 and not mem.get("composition_control_armed"):
+        return {"rule": "FEED_COMPOSITION_UPSET", "diagnosis": "feed_composition_upset", "why": "A/C ratio upset", "action": {"type": "reconfigure", "components": ["composition_control"]}}
+    
+    # Rule 17: Feed loss detected by low A feed and increasing pressure
+    if f["FA"] < 20 and f["P_slope"] > 30 and not mem.get("safety_overrides_armed"):
+        return {"rule": "FEED_LOSS", "diagnosis": "feed_loss_or_header_pressure", "why": "A feed loss", "action": {"type": "reconfigure", "components": ["safety_overrides"]}}
+    
+    # Rule 18: Temperature drift detected by large T_resid and stable pressure
+    if abs(f["T_resid"]) > 1.5 and f["P_slope"] < 5 and not mem.get("temperature_sensor_substituted"):
+        return {"rule": "TEMPERATURE_DRIFT", "diagnosis": "sensor_fault", "why": "temperature drift", "action": {"type": "substitute_instrument", "measurement": "reactor_temperature", "method": "soft"}}
+    
+    # Rule 19: Temperature sensor freeze - large residual, no trend change, and pressure increasing
+    if abs(f["T_resid"]) > 2.0 and f["T_slope"] < 0.1 and f["P_slope"] > 10 and not mem.get("temperature_sensor_substituted"):
+        return {"rule": "TEMP_SENSOR_FREEZE", "diagnosis": "sensor_fault", "why": "temperature sensor freeze", "action": {"type": "substitute_instrument", "measurement": "reactor_temperature", "method": "soft"}}
+    
+    # Rule 20: Production rate setpoint too high for safety overrides to be effective - use safety override
+    if f["cmd_production"] > 26 and not f["armed_overrides"]:
+        return {"rule": "HIGH_PRODUCTION_RATE", "diagnosis": "operating_point_change", "why": "high production rate", "action": {"type": "reconfigure", "components": ["safety_overrides"]}}
+    
+    # Rule 21: Feed composition upset with pressure approaching HIHI and large pressure residual - reduce pressure
+    # This rule addresses situations where a feed upset causes pressure to rise rapidly, 
+    # with a faulty pressure sensor (large residual) but still within the HIHI alarm range.
+    # It's robust against false positives by requiring both pressure slope > 10 and P_resid > 30,
+    # and ensures action is taken only once via mem guard.
+    if (f["yA_dev_nom"] < -10 and 
+        f["P_slope"] > 10 and 
+        f["P_resid"] > 30 and 
+        f["P_ttl"] < 10 and
+        not mem.get("feed_upset_pressure_reduction")):
+        return {"rule": "FEED_UPSET_PRESSURE_REDUCTION", "diagnosis": "feed_composition_upset", "why": "composition upset, pressure rising", "action": {"type": "adjust_setpoints", "changes": {"reactor_pressure": 2500.0}}}
+    
+    # Rule 22: Pressure sensor fault detected by large negative residual and stable conditions
+    # This rule catches cases where the pressure sensor is consistently reading low (large negative residual)
+    # but the process is otherwise stable, indicating a potential sensor drift or bias.
+    if (f["P_resid"] < -80 and 
+        abs(f["P_slope"]) < 5 and 
+        not mem.get("pressure_sensor_substituted") and
+        f["T_resid"] < 2.0 and 
+        f["T_slope"] < 2.0):
+        return {"rule": "PRESSURE_SENSOR_BIAS", "diagnosis": "sensor_fault", "why": "pressure sensor bias", "action": {"type": "substitute_instrument", "measurement": "reactor_pressure", "method": "soft"}}
+    
+    # Rule 23: Feed composition upset with large negative yA_dev_nom, pressure slope > 10, and pressure approaching HIHI
+    # This rule is designed to catch cases where a feed upset causes rapid pressure rise,
+    # and the pressure sensor reading is consistent with this (not a large positive residual),
+    # but still within the HIHI range. It's robust against false positives by requiring:
+    # 1. Large negative deviation in yA (feed composition upset)
+    # 2. Pressure slope > 10 (rapid rise)
+    # 3. P_ttl < 5 (approaching limit)
+    # 4. No large positive pressure residual (sensor not reading high)
+    # 5. Action taken only once via mem guard
+    if (f["yA_dev_nom"] < -20 and 
+        f["P_slope"] > 10 and 
+        f["P_ttl"] < 5 and
+        f["P_resid"] < 5 and
+        not mem.get("feed_upset_pressure_control")):
+        return {"rule": "FEED_UPSET_PRESSURE_CONTROL", "diagnosis": "feed_composition_upset", "why": "composition upset, pressure rising fast", "action": {"type": "adjust_setpoints", "changes": {"reactor_pressure": 2500.0}}}
+    
+    # Rule 24: Temperature sensor fault detected by large negative residual and stable pressure
+    # This rule catches cases where the temperature sensor is consistently reading low (large negative residual)
+    # but the process is otherwise stable, indicating a potential sensor drift or bias.
+    # It's robust against false positives by requiring:
+    # 1. Large negative T_resid (> -2.0)
+    # 2. Stable pressure slope (< 5)
+    # 3. No large positive pressure residual (< 2.0)
+    # 4. Action taken only once via mem guard
+    if (f["T_resid"] < -2.0 and 
+        abs(f["P_slope"]) < 5 and 
+        f["P_resid"] < 2.0 and
+        not mem.get("temperature_sensor_substituted")):
+        return {"rule": "TEMP_SENSOR_BIAS", "diagnosis": "sensor_fault", "why": "temperature sensor bias", "action": {"type": "substitute_instrument", "measurement": "reactor_temperature", "method": "soft"}}
+    
+    # Rule 25: Feed composition upset with pressure rising rapidly, large positive residual, and temperature alarm
+    # This rule addresses a specific pattern observed in the escalation cases:
+    # - Large positive pressure residual (sensor reading high)
+    # - Rapidly increasing pressure slope (> 100)
+    # - Temperature HI or HIHI alarm
+    # - Large negative yA_dev_nom (feed composition upset)
+    # - Action taken only once via mem guard
+    if (f["P_resid"] > 50 and 
+        f["P_slope"] > 100 and 
+        (f["A_TEMP_HI"] or f["A_TEMP_HIHI"]) and
+        f["yA_dev_nom"] < -1 and
+        not mem.get("feed_upset_temperature_pressure")):
+        return {"rule": "FEED_UPSET_TEMPERATURE_PRESSURE", "diagnosis": "feed_composition_upset", "why": "composition upset, pressure/temperature rising", "action": {"type": "reconfigure", "components": ["composition_control"]}}
+    
+    # Rule 26: Feed composition upset with pressure near HI and large negative residual - reduce pressure
+    # This rule addresses situations where a feed upset causes pressure to rise, 
+    # but the pressure sensor is reading low (large negative residual) - indicating a bias.
+    # It's robust against false positives by requiring:
+    # 1. Pressure near HI alarm threshold (P > 2760)
+    # 2. Large negative pressure residual (P_resid < -50)
+    # 3. Large negative yA_dev_nom (feed composition upset)
+    # 4. Pressure slope > 10 (rising rapidly)
+    # 5. Action taken only once via mem guard
+    if (f["P"] > 2760 and 
+        f["P_resid"] < -50 and 
+        f["yA_dev_nom"] < -5 and
+        f["P_slope"] > 10 and
+        not mem.get("feed_upset_pressure_bias")):
+        return {"rule": "FEED_UPSET_PRESSURE_BIAS", "diagnosis": "feed_composition_upset", "why": "composition upset, pressure bias", "action": {"type": "adjust_setpoints", "changes": {"reactor_pressure": 2665.0}}}
+    
+    # Rule 27: No alarms, stable conditions - no action
+    return {"rule": "NO_ACTION", "diagnosis": "unknown", "why": "normal operation", "action": {"type": "no_action"}}

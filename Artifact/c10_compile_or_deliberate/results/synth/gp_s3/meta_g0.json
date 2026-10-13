@@ -1,0 +1,60 @@
+{
+ "name": "g0",
+ "method": "gp",
+ "evals": 1872,
+ "label_evals": 0,
+ "generation": 0,
+ "best_gen": 0,
+ "best_evals_at_birth": 0,
+ "best_sr": 0.8076923076923077,
+ "best_score": 0.7876923076923077,
+ "table": "A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 5/20",
+ "loc": 10,
+ "rules": [
+  "R1"
+ ],
+ "n_rules": 1,
+ "genome": [
+  {
+   "atoms": [
+    [
+     "num",
+     "P_resid",
+     "<",
+     -0.043017
+    ]
+   ],
+   "action": "arm_both"
+  }
+ ],
+ "batch_size": 78,
+ "seed": 3,
+ "budget_evals": 20000,
+ "wall_s": 296.67149591445923,
+ "ga": {
+  "pop_size": 24,
+  "elite": 2,
+  "tournament": 3,
+  "p_crossover": 0.7,
+  "p_mutation": 0.9,
+  "max_rules": 8,
+  "falsify": true,
+  "falsify_every": 1,
+  "falsify_n": 48,
+  "batch_cap": 140
+ },
+ "history": [
+  {
+   "gen": 0,
+   "evals": 1872,
+   "label_evals": 0,
+   "best_score": 0.7876923076923077,
+   "best_sr": 0.8076923076923077,
+   "mean_score": 0.46216079059829057,
+   "best_rules": 1,
+   "batch": 78,
+   "wall_s": 296.7
+  }
+ ],
+ "falsification": []
+}

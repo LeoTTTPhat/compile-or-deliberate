@@ -1,0 +1,62 @@
+training batch: 78 scenarios; model qwen3-coder:30b; seed 1; budget 400000
+[it 1] v0 sr=0.641 score=0.585 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20 tokens=5000 (62s)
+  checkpoint v0: tokens=5000 best it=1 sr=0.641 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20
+[it 2] child sr=0.551 score=0.487 A: 11/12, P: 3/16, Q: 12/12, S: 1/18, SN: 16/20 | best 0.641 tokens=17698 (146s)
+[it 3] child sr=0.692 score=0.636 A: 12/12, P: 7/16, Q: 12/12, S: 5/18, SN: 18/20 | best 0.692 tokens=30354 (207s)
+  falsification round 1: incumbent failed 12/48 fresh scenarios; batch -> 90
+    tune: moved rule block 13 ['PRESSURE_APPROACHING_TRIP'] to front -> 0.967
+    tune: T_resid 3 -> 1.5 -> 0.989
+  tuned incumbent: 0.600 -> 0.989 (24 batch evals, CPU only)
+  checkpoint B25000: tokens=30354 best it=3 sr=0.989 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/21
+[it 4] child sr=0.611 score=0.551 A: 12/12, P: 8/20, Q: 12/12, S: 5/25, SN: 18/21 | best 0.989 tokens=43327 (2615s)
+[it 5] child sr=0.989 score=0.920 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/21 | best 0.989 tokens=51629 (2937s)
+  checkpoint B50000: tokens=51629 best it=3 sr=0.989 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/21
+[it 6] child sr=0.989 score=0.920 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/21 | best 0.989 tokens=59931 (3250s)
+  falsification round 2: incumbent failed 1/48 fresh scenarios; batch -> 91
+[it 7] child sr=0.978 score=0.909 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/22 | best 0.978 tokens=69354 (4631s)
+[it 8] child sr=0.978 score=0.909 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/22 | best 0.978 tokens=78785 (4742s)
+[it 9] child sr=0.978 score=0.909 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/22 | best 0.978 tokens=88104 (4873s)
+  falsification round 3: incumbent failed 0/48 fresh scenarios; batch -> 91
+[it 10] child sr=0.978 score=0.920 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/22 | best 0.978 tokens=97414 (6141s)
+[it 11] child sr=0.978 score=0.909 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/22 | best 0.978 tokens=106982 (6307s)
+  checkpoint B100000: tokens=106982 best it=10 sr=0.978 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/22
+[it 12] child sr=0.978 score=0.909 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/22 | best 0.978 tokens=116301 (6471s)
+  falsification round 4: incumbent failed 1/48 fresh scenarios; batch -> 92
+[it 13] child sr=0.967 score=0.899 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/23 | best 0.967 tokens=126698 (7829s)
+[it 14] child sr=0.967 score=0.907 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/23 | best 0.967 tokens=136967 (8083s)
+[it 15] child sr=0.967 score=0.910 A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/23 | best 0.967 tokens=147362 (8447s)
+  falsification round 5: incumbent failed 3/48 fresh scenarios; batch -> 95
+[it 16] child sr=0.937 score=0.879 A: 12/12, P: 20/22, Q: 12/12, S: 25/25, SN: 20/24 | best 0.937 tokens=159799 (9706s)
+[it 17] child sr=0.937 score=0.879 A: 12/12, P: 20/22, Q: 12/12, S: 25/25, SN: 20/24 | best 0.937 tokens=172566 (9907s)
+[it 18] child sr=0.937 score=0.879 A: 12/12, P: 20/22, Q: 12/12, S: 25/25, SN: 20/24 | best 0.937 tokens=185144 (10085s)
+  falsification round 6: incumbent failed 2/48 fresh scenarios; batch -> 97
+    tune: P_slope 10 -> 2.5 -> 0.928
+  tuned incumbent: 0.928 -> 0.928 (24 batch evals, CPU only)
+[it 19] child sr=0.928 score=0.861 A: 12/12, P: 20/23, Q: 12/12, S: 25/25, SN: 21/25 | best 0.928 tokens=198073 (11815s)
+[it 20] child sr=0.928 score=0.861 A: 12/12, P: 20/23, Q: 12/12, S: 25/25, SN: 21/25 | best 0.928 tokens=211272 (11932s)
+  checkpoint B200000: tokens=211272 best it=15 sr=0.928 A: 12/12, P: 20/23, Q: 12/12, S: 25/25, SN: 21/25
+[it 21] child sr=0.928 score=0.861 A: 12/12, P: 20/23, Q: 12/12, S: 25/25, SN: 21/25 | best 0.928 tokens=224691 (12116s)
+  falsification round 7: incumbent failed 1/48 fresh scenarios; batch -> 98
+[it 22] child sr=0.959 score=0.896 A: 12/12, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.959 tokens=237462 (13691s)
+[it 23] child sr=0.918 score=0.856 A: 12/12, P: 20/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.959 tokens=250286 (13772s)
+[it 24] child sr=0.959 score=0.896 A: 12/12, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.959 tokens=261979 (13865s)
+  falsification round 8: incumbent failed 0/48 fresh scenarios; batch -> 98
+[it 25] child sr=0.959 score=0.896 A: 12/12, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.959 tokens=273541 (15094s)
+[it 26] child sr=0.959 score=0.896 A: 12/12, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.959 tokens=285818 (15186s)
+[it 27] child sr=0.959 score=0.896 A: 12/12, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.959 tokens=297646 (15273s)
+  falsification round 9: incumbent failed 1/48 fresh scenarios; batch -> 99
+[it 28] child sr=0.949 score=0.884 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.949 tokens=309899 (16237s)
+[it 29] child sr=0.949 score=0.884 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.949 tokens=322393 (16304s)
+[it 30] child sr=0.949 score=0.882 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/25 | best 0.949 tokens=334771 (16370s)
+  falsification round 10: incumbent failed 1/48 fresh scenarios; batch -> 100
+[it 31] child sr=0.940 score=0.874 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26 | best 0.940 tokens=347396 (17274s)
+[it 32] child sr=0.940 score=0.874 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26 | best 0.940 tokens=359760 (17346s)
+[it 33] child sr=0.940 score=0.874 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26 | best 0.940 tokens=372313 (17421s)
+  falsification round 11: incumbent failed 0/48 fresh scenarios; batch -> 100
+[it 34] child sr=0.940 score=0.874 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26 | best 0.940 tokens=384958 (18302s)
+[it 35] child sr=0.940 score=0.874 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26 | best 0.940 tokens=397345 (18362s)
+[it 36] child sr=0.940 score=0.874 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26 | best 0.940 tokens=409964 (18426s)
+  falsification round 12: incumbent failed 0/48 fresh scenarios; batch -> 100
+  checkpoint B400000: tokens=409964 best it=22 sr=0.940 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26
+  checkpoint final: tokens=409964 best it=22 sr=0.940 A: 12/13, P: 24/24, Q: 12/12, S: 25/25, SN: 21/26
+DONE best it=22 sr=0.940 tokens=409964 calls=36

@@ -1,0 +1,118 @@
+{
+ "name": "B100000",
+ "tokens": 110975,
+ "calls": 9,
+ "best_it": 6,
+ "best_sr": 0.4017094017094017,
+ "best_score": 0.36170940170940175,
+ "table": "A: 12/12, P: 6/32, Q: 0/12, S: 17/35, SN: 12/26",
+ "loc": 168,
+ "rules": [
+  "FEED_COMPOSITION_UPSET",
+  "FEED_LOSS_A_VALVE",
+  "FEED_LOSS_POSSIBLE",
+  "GRADE_DEV",
+  "OPERATING_POINT_CHANGE",
+  "PRESSURE_HIHI",
+  "PRESSURE_HI_ADJUST",
+  "PRESSURE_HI_NEAR_LIMIT",
+  "PRESSURE_SENSOR_FAULT",
+  "P_SENSOR_DRIFT",
+  "RATE_DEV",
+  "REACTOR_PRESSURE_DRIFT",
+  "REACTOR_TEMP_DRIFT",
+  "RLEVEL_HI_ADJUST",
+  "RLEVEL_HI_COMPOSITION",
+  "SLEVEL_LO_ADJUST",
+  "SLEVEL_LO_FEEDLOSS",
+  "TEMP_HIHI",
+  "TEMP_HI_ADJUST",
+  "TEMP_HI_NEAR_LIMIT",
+  "TEMP_SENSOR_FAULT",
+  "T_SENSOR_DRIFT"
+ ],
+ "batch_size": 117,
+ "model": "qwen3-coder:30b",
+ "prompt_hash": "75ea6b0352e43542",
+ "history": [
+  {
+   "it": 0,
+   "ptok": 3548,
+   "ctok": 1460,
+   "cached": true,
+   "latency": 298.4430980682373,
+   "tokens_cum": 5008
+  },
+  {
+   "it": 2,
+   "ptok": 10347,
+   "ctok": 1970,
+   "cached": true,
+   "latency": 238.3176507949829,
+   "tokens_cum": 17325
+  },
+  {
+   "it": 3,
+   "ptok": 10347,
+   "ctok": 1761,
+   "cached": true,
+   "latency": 257.7992067337036,
+   "tokens_cum": 29433
+  },
+  {
+   "it": 4,
+   "ptok": 10863,
+   "ctok": 2233,
+   "cached": false,
+   "latency": 595.7607369422913,
+   "tokens_cum": 42529
+  },
+  {
+   "it": 5,
+   "ptok": 10863,
+   "ctok": 2009,
+   "cached": false,
+   "latency": 310.0772922039032,
+   "tokens_cum": 55401
+  },
+  {
+   "it": 6,
+   "ptok": 10863,
+   "ctok": 2346,
+   "cached": false,
+   "latency": 371.1821918487549,
+   "tokens_cum": 68610
+  },
+  {
+   "it": 7,
+   "ptok": 10908,
+   "ctok": 2579,
+   "cached": false,
+   "latency": 87.05027890205383,
+   "tokens_cum": 82097
+  },
+  {
+   "it": 8,
+   "ptok": 11565,
+   "ctok": 2981,
+   "cached": false,
+   "latency": 95.41810321807861,
+   "tokens_cum": 96643
+  },
+  {
+   "it": 9,
+   "ptok": 11565,
+   "ctok": 2767,
+   "cached": false,
+   "latency": 154.28143692016602,
+   "tokens_cum": 110975
+  }
+ ],
+ "falsify": true,
+ "minimize": true,
+ "remedy": true,
+ "seed": 2,
+ "lint_fixes": 0,
+ "episodes": 9297,
+ "tune_budget": 24
+}

@@ -1,0 +1,338 @@
+{
+ "name": "final",
+ "method": "gp",
+ "evals": 19959,
+ "label_evals": 36,
+ "generation": 9,
+ "best_gen": 9,
+ "best_evals_at_birth": 19047,
+ "best_sr": 0.7456140350877193,
+ "best_score": 0.6856140350877193,
+ "table": "A: 13/13, P: 17/17, Q: 12/12, S: 21/21, SN: 22/51",
+ "loc": 26,
+ "rules": [
+  "R1",
+  "R2",
+  "R3",
+  "R4",
+  "R5"
+ ],
+ "n_rules": 5,
+ "genome": [
+  {
+   "atoms": [
+    [
+     "num",
+     "P_ttl",
+     "<",
+     5.8432
+    ],
+    [
+     "num",
+     "XL_slope",
+     ">",
+     12.326
+    ]
+   ],
+   "action": "reactor_temperature+3"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "P_resid",
+     "<",
+     30.778
+    ]
+   ],
+   "action": "arm_both"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "T_avg",
+     ">",
+     120.4
+    ]
+   ],
+   "action": "arm_composition"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "G_cmd_err",
+     ">",
+     -8.432
+    ]
+   ],
+   "action": "min_stable_park"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "T_avg",
+     "<",
+     120.43
+    ]
+   ],
+   "action": "subst_T"
+  }
+ ],
+ "batch_size": 114,
+ "seed": 2,
+ "budget_evals": 20000,
+ "wall_s": 5808.194957971573,
+ "ga": {
+  "pop_size": 24,
+  "elite": 2,
+  "tournament": 3,
+  "p_crossover": 0.7,
+  "p_mutation": 0.9,
+  "max_rules": 8,
+  "falsify": true,
+  "falsify_every": 1,
+  "falsify_n": 48,
+  "batch_cap": 140
+ },
+ "history": [
+  {
+   "gen": 0,
+   "evals": 1872,
+   "label_evals": 0,
+   "best_score": 0.7676923076923077,
+   "best_sr": 0.8076923076923077,
+   "mean_score": 0.41602831196581197,
+   "best_rules": 4,
+   "batch": 78,
+   "wall_s": 418.5
+  },
+  {
+   "gen": 1,
+   "evals": 3588,
+   "label_evals": 0,
+   "best_score": 0.8061538461538461,
+   "best_sr": 0.8461538461538461,
+   "mean_score": 0.5178151709401709,
+   "best_rules": 2,
+   "batch": 78,
+   "wall_s": 798.5
+  },
+  {
+   "gen": 2,
+   "evals": 5372,
+   "label_evals": 4,
+   "best_score": 0.7648780487804878,
+   "best_sr": 0.8048780487804879,
+   "mean_score": 0.5825618224932249,
+   "best_rules": 2,
+   "batch": 82,
+   "wall_s": 1500.4
+  },
+  {
+   "gen": 3,
+   "evals": 7318,
+   "label_evals": 8,
+   "best_score": 0.7506976744186046,
+   "best_sr": 0.7906976744186046,
+   "mean_score": 0.6218015503875969,
+   "best_rules": 3,
+   "batch": 86,
+   "wall_s": 1994.8
+  },
+  {
+   "gen": 4,
+   "evals": 9573,
+   "label_evals": 15,
+   "best_score": 0.7619832735961768,
+   "best_sr": 0.7849462365591398,
+   "mean_score": 0.654458383114297,
+   "best_rules": 2,
+   "batch": 93,
+   "wall_s": 2503.6
+  },
+  {
+   "gen": 5,
+   "evals": 11664,
+   "label_evals": 17,
+   "best_score": 0.7454580896686159,
+   "best_sr": 0.7684210526315789,
+   "mean_score": 0.5584811565951917,
+   "best_rules": 2,
+   "batch": 95,
+   "wall_s": 2984.4
+  },
+  {
+   "gen": 6,
+   "evals": 14027,
+   "label_evals": 22,
+   "best_score": 0.707037037037037,
+   "best_sr": 0.73,
+   "mean_score": 0.6090277777777777,
+   "best_rules": 2,
+   "batch": 100,
+   "wall_s": 3875.4
+  },
+  {
+   "gen": 7,
+   "evals": 16590,
+   "label_evals": 29,
+   "best_score": 0.7315954606141521,
+   "best_sr": 0.8037383177570093,
+   "mean_score": 0.556374054294615,
+   "best_rules": 7,
+   "batch": 107,
+   "wall_s": 4851.9
+  },
+  {
+   "gen": 8,
+   "evals": 18907,
+   "label_evals": 32,
+   "best_score": 0.7096753246753247,
+   "best_sr": 0.7818181818181819,
+   "mean_score": 0.6177002164502164,
+   "best_rules": 7,
+   "batch": 110,
+   "wall_s": 5539.2
+  },
+  {
+   "gen": 9,
+   "evals": 19959,
+   "label_evals": 36,
+   "best_score": 0.6856140350877193,
+   "best_sr": 0.7456140350877193,
+   "mean_score": 0.6301362781954887,
+   "best_rules": 5,
+   "batch": 114,
+   "wall_s": 5808.2
+  }
+ ],
+ "falsification": [
+  {
+   "round": 1,
+   "gen": 1,
+   "n_new": 4,
+   "n_fresh": 48,
+   "n_failing": 4,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 3728,
+   "batch": 82
+  },
+  {
+   "round": 2,
+   "gen": 2,
+   "n_new": 4,
+   "n_fresh": 48,
+   "n_failing": 4,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "benign"
+   ],
+   "evals": 5512,
+   "batch": 86
+  },
+  {
+   "round": 3,
+   "gen": 3,
+   "n_new": 7,
+   "n_fresh": 48,
+   "n_failing": 7,
+   "labels": [
+    "rescuable",
+    "benign",
+    "rescuable",
+    "benign",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 7527,
+   "batch": 93
+  },
+  {
+   "round": 4,
+   "gen": 4,
+   "n_new": 2,
+   "n_fresh": 48,
+   "n_failing": 2,
+   "labels": [
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 9667,
+   "batch": 95
+  },
+  {
+   "round": 5,
+   "gen": 5,
+   "n_new": 5,
+   "n_fresh": 48,
+   "n_failing": 5,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 11827,
+   "batch": 100
+  },
+  {
+   "round": 6,
+   "gen": 6,
+   "n_new": 7,
+   "n_fresh": 48,
+   "n_failing": 7,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "benign",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 14236,
+   "batch": 107
+  },
+  {
+   "round": 7,
+   "gen": 7,
+   "n_new": 3,
+   "n_fresh": 48,
+   "n_failing": 3,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 16707,
+   "batch": 110
+  },
+  {
+   "round": 8,
+   "gen": 8,
+   "n_new": 4,
+   "n_fresh": 48,
+   "n_failing": 4,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 19047,
+   "batch": 114
+  }
+ ]
+}

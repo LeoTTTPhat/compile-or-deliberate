@@ -1,0 +1,12 @@
+CONTRACT. Write a Python function `def playbook(f, mem):` (helper functions allowed). It is called at every
+supervisor invocation: when a new alarm annunciates, while alarms persist (at most every 0.25 h), and on a 2-h
+heartbeat. Return None for no action, or a dict {"rule": "<short id>", "diagnosis": <vocabulary item>,
+"why": "<few words>", "action": <exactly one action object as defined in the plant description>}.
+Allowed: if/else, comparisons, arithmetic, local variables, for-loops and comprehensions over lists, dict
+access f["key"] and f.get("key", default), and the builtins abs, min, max, len, round, float, int, bool, any,
+all, sum, sorted, isfinite, sqrt, exp, log, inf, and the methods get/items/keys/values/append/extend/update/
+pop/copy/setdefault. Forbidden: imports, while-loops, lambdas, classes, any other attribute access. `mem` is a dict that persists within one episode (use it to avoid repeating an action).
+Rules are evaluated in order; the first matching rule wins, so put the most safety-critical first. Setpoint
+targets are ABSOLUTE values and must respect the bounds and max move from the current setpoint f[K+"_sp"].
+Keep the playbook readable: one commented block per rule, under 150 lines.
+Reply with ONLY the complete code in a single ```python block.

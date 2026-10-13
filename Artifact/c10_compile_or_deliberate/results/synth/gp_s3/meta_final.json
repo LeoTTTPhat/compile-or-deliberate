@@ -1,0 +1,368 @@
+{
+ "name": "final",
+ "method": "gp",
+ "evals": 19998,
+ "label_evals": 30,
+ "generation": 9,
+ "best_gen": 9,
+ "best_evals_at_birth": 19242,
+ "best_sr": 0.8425925925925926,
+ "best_score": 0.7817925925925926,
+ "table": "A: 12/12, P: 16/16, Q: 12/12, S: 20/20, SN: 31/48",
+ "loc": 34,
+ "rules": [
+  "R1",
+  "R2",
+  "R3",
+  "R4",
+  "R5",
+  "R6",
+  "R7"
+ ],
+ "n_rules": 7,
+ "genome": [
+  {
+   "atoms": [
+    [
+     "num",
+     "P_resid",
+     "<",
+     -0.043017
+    ],
+    [
+     "num",
+     "mv_r_cooling_water",
+     ">",
+     40.039
+    ]
+   ],
+   "action": "arm_both"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "T_slope",
+     ">",
+     -0.017028
+    ]
+   ],
+   "action": "arm_both"
+  },
+  {
+   "atoms": [
+    [
+     "alarm",
+     "RLEVEL_HI",
+     "not",
+     0.0
+    ]
+   ],
+   "action": "subst_P"
+  },
+  {
+   "atoms": [
+    [
+     "alarm",
+     "TEMP_HIHI",
+     "not",
+     0.0
+    ],
+    [
+     "num",
+     "T_avg",
+     ">",
+     120.36
+    ]
+   ],
+   "action": "reactor_pressure-50"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "XL_slope",
+     ">",
+     1.3255
+    ],
+    [
+     "num",
+     "n_alarms",
+     "<",
+     3.5
+    ]
+   ],
+   "action": "arm_composition"
+  },
+  {
+   "atoms": [
+    [
+     "state",
+     "armed_overrides",
+     "not",
+     0.0
+    ]
+   ],
+   "action": "arm_composition"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "T_slope",
+     ">",
+     -0.044512
+    ]
+   ],
+   "action": "arm_both"
+  }
+ ],
+ "batch_size": 108,
+ "seed": 3,
+ "budget_evals": 20000,
+ "wall_s": 5657.484004020691,
+ "ga": {
+  "pop_size": 24,
+  "elite": 2,
+  "tournament": 3,
+  "p_crossover": 0.7,
+  "p_mutation": 0.9,
+  "max_rules": 8,
+  "falsify": true,
+  "falsify_every": 1,
+  "falsify_n": 48,
+  "batch_cap": 140
+ },
+ "history": [
+  {
+   "gen": 0,
+   "evals": 1872,
+   "label_evals": 0,
+   "best_score": 0.7876923076923077,
+   "best_sr": 0.8076923076923077,
+   "mean_score": 0.46216079059829057,
+   "best_rules": 1,
+   "batch": 78,
+   "wall_s": 296.7
+  },
+  {
+   "gen": 1,
+   "evals": 3588,
+   "label_evals": 0,
+   "best_score": 0.8191025641025641,
+   "best_sr": 0.8974358974358975,
+   "mean_score": 0.5806517094017094,
+   "best_rules": 6,
+   "batch": 78,
+   "wall_s": 618.9
+  },
+  {
+   "gen": 2,
+   "evals": 5577,
+   "label_evals": 5,
+   "best_score": 0.7650401606425703,
+   "best_sr": 0.8433734939759037,
+   "mean_score": 0.6591624832663989,
+   "best_rules": 6,
+   "batch": 83,
+   "wall_s": 1093.9
+  },
+  {
+   "gen": 3,
+   "evals": 7586,
+   "label_evals": 8,
+   "best_score": 0.7356201550387597,
+   "best_sr": 0.813953488372093,
+   "mean_score": 0.6648788759689922,
+   "best_rules": 6,
+   "batch": 86,
+   "wall_s": 1660.8
+  },
+  {
+   "gen": 4,
+   "evals": 9710,
+   "label_evals": 14,
+   "best_score": 0.687427536231884,
+   "best_sr": 0.7282608695652174,
+   "mean_score": 0.6097342995169082,
+   "best_rules": 8,
+   "batch": 92,
+   "wall_s": 2498.5
+  },
+  {
+   "gen": 5,
+   "evals": 11866,
+   "label_evals": 18,
+   "best_score": 0.6659333333333334,
+   "best_sr": 0.7083333333333334,
+   "mean_score": 0.6063048611111111,
+   "best_rules": 6,
+   "batch": 96,
+   "wall_s": 3396.2
+  },
+  {
+   "gen": 6,
+   "evals": 14296,
+   "label_evals": 24,
+   "best_score": 0.730321568627451,
+   "best_sr": 0.803921568627451,
+   "mean_score": 0.5513718954248366,
+   "best_rules": 7,
+   "batch": 102,
+   "wall_s": 3997.8
+  },
+  {
+   "gen": 7,
+   "evals": 16723,
+   "label_evals": 27,
+   "best_score": 0.8058666666666667,
+   "best_sr": 0.8666666666666667,
+   "mean_score": 0.5865428571428571,
+   "best_rules": 7,
+   "batch": 105,
+   "wall_s": 4613.0
+  },
+  {
+   "gen": 8,
+   "evals": 19171,
+   "label_evals": 29,
+   "best_score": 0.7896672897196262,
+   "best_sr": 0.8504672897196262,
+   "mean_score": 0.6178853582554517,
+   "best_rules": 7,
+   "batch": 107,
+   "wall_s": 5299.7
+  },
+  {
+   "gen": 9,
+   "evals": 19998,
+   "label_evals": 30,
+   "best_score": 0.7817925925925926,
+   "best_sr": 0.8425925925925926,
+   "mean_score": 0.6511876543209877,
+   "best_rules": 7,
+   "batch": 108,
+   "wall_s": 5657.4
+  }
+ ],
+ "falsification": [
+  {
+   "round": 1,
+   "gen": 1,
+   "n_new": 5,
+   "n_fresh": 48,
+   "n_failing": 5,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 3751,
+   "batch": 83
+  },
+  {
+   "round": 2,
+   "gen": 2,
+   "n_new": 3,
+   "n_fresh": 48,
+   "n_failing": 3,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 5694,
+   "batch": 86
+  },
+  {
+   "round": 3,
+   "gen": 3,
+   "n_new": 6,
+   "n_fresh": 48,
+   "n_failing": 6,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 7772,
+   "batch": 92
+  },
+  {
+   "round": 4,
+   "gen": 4,
+   "n_new": 4,
+   "n_fresh": 48,
+   "n_failing": 4,
+   "labels": [
+    "rescuable",
+    "benign",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 9850,
+   "batch": 96
+  },
+  {
+   "round": 5,
+   "gen": 5,
+   "n_new": 6,
+   "n_fresh": 48,
+   "n_failing": 6,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 12052,
+   "batch": 102
+  },
+  {
+   "round": 6,
+   "gen": 6,
+   "n_new": 3,
+   "n_fresh": 48,
+   "n_failing": 3,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 14413,
+   "batch": 105
+  },
+  {
+   "round": 7,
+   "gen": 7,
+   "n_new": 2,
+   "n_fresh": 48,
+   "n_failing": 2,
+   "labels": [
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 16817,
+   "batch": 107
+  },
+  {
+   "round": 8,
+   "gen": 8,
+   "n_new": 1,
+   "n_fresh": 48,
+   "n_failing": 1,
+   "labels": [
+    "rescuable"
+   ],
+   "evals": 19242,
+   "batch": 108
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+training batch: 78 scenarios; model qwen3-coder:30b; seed 3; budget 400000
+[it 1] v0 sr=0.769 score=0.731 A: 12/12, P: 16/16, Q: 12/12, S: 14/18, SN: 6/20 tokens=5324 (59s)
+  checkpoint v0: tokens=5324 best it=1 sr=0.769 A: 12/12, P: 16/16, Q: 12/12, S: 14/18, SN: 6/20
+[it 2] child sr=0.808 score=0.750 A: 11/12, P: 16/16, Q: 12/12, S: 13/18, SN: 11/20 | best 0.808 tokens=18369 (142s)
+[it 3] child sr=0.808 score=0.750 A: 11/12, P: 16/16, Q: 12/12, S: 13/18, SN: 11/20 | best 0.808 tokens=32345 (221s)
+  falsification round 1: incumbent failed 6/48 fresh scenarios; batch -> 84
+    tune: P_resid 100 -> 400 -> 0.750
+  tuned incumbent: 0.750 -> 0.750 (24 batch evals, CPU only)
+  checkpoint B25000: tokens=32345 best it=2 sr=0.750 A: 11/12, P: 16/16, Q: 12/12, S: 13/19, SN: 11/25
+[it 4] child sr=0.750 score=0.693 A: 11/12, P: 16/16, Q: 12/12, S: 13/19, SN: 11/25 | best 0.750 tokens=46115 (2948s)
+[it 5] child sr=0.750 score=0.693 A: 11/12, P: 16/16, Q: 12/12, S: 13/19, SN: 11/25 | best 0.750 tokens=59611 (3354s)
+  checkpoint B50000: tokens=59611 best it=2 sr=0.750 A: 11/12, P: 16/16, Q: 12/12, S: 13/19, SN: 11/25
+[it 6] child sr=0.798 score=0.738 A: 12/12, P: 16/16, Q: 12/12, S: 13/19, SN: 14/25 | best 0.798 tokens=73684 (3772s)
+  falsification round 2: incumbent failed 4/48 fresh scenarios; batch -> 88
+    tune: XL_sp 40 -> 60 -> 0.773
+  tuned incumbent: 0.761 -> 0.773 (24 batch evals, CPU only)
+[it 7] child sr=0.727 score=0.576 A: 12/12, P: 17/17, Q: 12/12, S: 12/20, SN: 11/27 | best 0.773 tokens=104697 (5027s)
+  checkpoint B100000: tokens=104697 best it=6 sr=0.773 A: 12/12, P: 16/17, Q: 12/12, S: 14/20, SN: 14/27
+[it 8] child sr=0.773 score=0.711 A: 12/12, P: 16/17, Q: 12/12, S: 14/20, SN: 14/27 | best 0.773 tokens=119853 (5161s)
+[it 9] child sr=0.773 score=0.711 A: 12/12, P: 16/17, Q: 12/12, S: 14/20, SN: 14/27 | best 0.773 tokens=134780 (5271s)
+  falsification round 3: incumbent failed 3/48 fresh scenarios; batch -> 91
+    tune: P_slope -10 -> -2.5 -> 0.780
+  tuned incumbent: 0.747 -> 0.780 (24 batch evals, CPU only)
+  [it 10] invalid playbook after 2 fixes: it reads feature keys that do not exist: ['yA_dev']. Use only the documented keys (e.g. P_slope, P_ttl, T_resid, A_PRESSURE_HI, mv_r_cooling_water); a missing key raises an error and the playbook abst
+[it 11] child sr=0.780 score=0.714 A: 12/12, P: 16/17, Q: 12/12, S: 14/20, SN: 17/30 | best 0.780 tokens=199673 (7275s)
+[it 12] child sr=0.780 score=0.714 A: 12/12, P: 16/17, Q: 12/12, S: 14/20, SN: 17/30 | best 0.780 tokens=214706 (7835s)
+  falsification round 4: incumbent failed 4/48 fresh scenarios; batch -> 95
+  checkpoint B200000: tokens=214706 best it=6 sr=0.747 A: 12/12, P: 16/17, Q: 12/12, S: 14/21, SN: 17/33
+[it 13] child sr=0.737 score=0.670 A: 11/12, P: 16/17, Q: 12/12, S: 14/21, SN: 17/33 | best 0.747 tokens=264522 (9699s)
+[it 14] child sr=0.716 score=0.654 A: 12/12, P: 16/17, Q: 12/12, S: 14/21, SN: 14/33 | best 0.747 tokens=297092 (10083s)
+[it 15] child sr=0.747 score=0.681 A: 12/12, P: 16/17, Q: 12/12, S: 14/21, SN: 17/33 | best 0.747 tokens=312493 (10222s)
+  falsification round 5: incumbent failed 1/48 fresh scenarios; batch -> 96
+[it 16] child sr=0.740 score=0.673 A: 12/12, P: 16/17, Q: 12/12, S: 14/22, SN: 17/33 | best 0.740 tokens=327628 (11729s)
+[it 17] child sr=0.740 score=0.673 A: 12/12, P: 16/17, Q: 12/12, S: 14/22, SN: 17/33 | best 0.740 tokens=342646 (11855s)
+[it 18] child sr=0.698 score=0.632 A: 11/12, P: 16/17, Q: 12/12, S: 14/22, SN: 14/33 | best 0.740 tokens=392801 (12231s)
+  falsification round 6: incumbent failed 3/48 fresh scenarios; batch -> 99
+[it 19] child sr=0.737 score=0.661 A: 12/12, P: 16/17, Q: 12/12, S: 17/23, SN: 16/35 | best 0.737 tokens=407826 (13618s)
+  checkpoint B400000: tokens=407826 best it=19 sr=0.737 A: 12/12, P: 16/17, Q: 12/12, S: 17/23, SN: 16/35
+  checkpoint final: tokens=407826 best it=19 sr=0.737 A: 12/12, P: 16/17, Q: 12/12, S: 17/23, SN: 16/35
+DONE best it=19 sr=0.737 tokens=407826 calls=27

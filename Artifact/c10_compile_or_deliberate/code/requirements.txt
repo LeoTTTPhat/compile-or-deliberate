@@ -1,0 +1,13 @@
+# pinned from the environment that produced the paper's results (python 3.12.12)
+tep-studio==0.2.0
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.6
+statsmodels==0.15.0
+matplotlib==3.11.2
+requests==2.34.2
+psutil==7.2.2
+tqdm==4.70.1
+pyyaml==6.0.3
+pytest==9.1.1

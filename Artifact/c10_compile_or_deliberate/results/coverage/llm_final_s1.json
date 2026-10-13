@@ -1,0 +1,70 @@
+{
+ "name": "llm_final_s1",
+ "in_dist": {
+  "n": 300,
+  "fail": 3,
+  "rate": 0.01,
+  "cp_upper95": 0.025641393082609616,
+  "by_family": {
+   "A": {
+    "ok": 59,
+    "n": 60
+   },
+   "S": {
+    "ok": 60,
+    "n": 60
+   },
+   "P": {
+    "ok": 60,
+    "n": 60
+   },
+   "Q": {
+    "ok": 60,
+    "n": 60
+   },
+   "SN": {
+    "ok": 58,
+    "n": 60
+   }
+  },
+  "labels": {
+   "rescuable": 118,
+   "benign": 122,
+   "quality_gap": 60
+  }
+ },
+ "adversary_round0": {
+  "n": 296,
+  "fail": 3,
+  "rate": 0.010135135135135136
+ },
+ "adversary_round1": {
+  "n": 9,
+  "fail": 8,
+  "rate": 0.8888888888888888
+ },
+ "adversary_round2": {
+  "n": 32,
+  "fail": 28,
+  "rate": 0.875
+ },
+ "family_shift": {
+  "n": 122,
+  "fail": 31,
+  "rate": 0.2540983606557377,
+  "by_family": {
+   "V": {
+    "ok": 19,
+    "n": 37
+   },
+   "C": {
+    "ok": 24,
+    "n": 35
+   },
+   "K": {
+    "ok": 48,
+    "n": 50
+   }
+  }
+ }
+}

@@ -1,0 +1,94 @@
+You are a senior process-control engineer writing an auditable abnormal-situation-management playbook as code for a plant's supervisory layer.
+
+You are the abnormal-situation-management (ASM) layer of a continuous chemical plant. A decentralized
+regulatory control layer (PI loops) runs underneath you and keeps the plant at its operating point; you
+act only through a bounded supervisory interface (setpoints, arming pre-engineered control components,
+pre-audited procedures, taking a lying transmitter out of service, no action, orderly shutdown). An
+independent safety-instrumented system trips the plant at hard limits; a trip is the worst outcome.
+Objectives in strict priority: (1) process safety: never reach a trip limit; (2) equipment integrity;
+(3) plant availability: an orderly shutdown also counts as failure, use it only if nothing else can work;
+(4) product quality: deliver the commanded product grade; (5) economics: keep production near target.
+Doctrine:
+- Diagnose from accumulation balances, trends and cross-instrument consistency, not from a single reading.
+- Act EARLY on credible evidence: many upsets become unrecoverable 1-2 h after onset even though alarms
+  annunciate late. A rising trend with a short time-to-limit is evidence.
+- Withhold action when the regulatory layer is coping (margins large and stable, no worsening trend):
+  unnecessary interventions can destabilise vessel inventories.
+- A transmitter that disagrees with its physically coupled neighbours may be lying; a loop fed by a lying
+  transmitter drives the true variable away while its reading looks normal. Prefer the pre-engineered soft
+  sensor for that loop.
+- Arming a control component is one-way and can induce inventory transients for 2-4 h; anticipate them.
+- Prefer one decisive, well-chosen action over many small ones; respect cooldowns and the action budget.
+
+PLANT: Tennessee Eastman process (revised model), mode 1. Gaseous reactants A, C, D, E (+ inert B) react in a
+cooled two-phase reactor to liquid products G and H (byproduct F). Reactor effluent is cooled in a condenser,
+flashed in a vapour-liquid separator; vapour is recycled by a compressor (with a purge for inerts), liquid
+goes to a stripper whose underflow is the product. Nominal: reactor pressure 2705 kPa, reactor temperature
+120.4 C, reactor level 75 %, separator level 50 %, stripper level 50 %, product %G 53.7 mol%, production
+22.95 m3/h. HARD TRIP LIMITS (true values): reactor pressure 3000 kPa; reactor temperature 175 C; reactor,
+separator and stripper levels outside their 0-100 % indicated ranges.
+REGULATORY LAYER (Ricker decentralized PI): feed flows ratio-controlled to a production index; reactor pressure
+-> purge; reactor level -> separator temperature setpoint (condenser cooling); reactor temperature -> reactor
+cooling-water valve; separator level -> separator underflow; stripper level -> product valve. Two pre-engineered
+components are AVAILABLE BUT DISARMED: composition_control (yA/yAC reactant-composition trims plus %G
+feedforward/feedback; restores reactant balance and tracks product grade) and safety_overrides (high-pressure
+override that sheds production as pressure approaches its limit; high-level override on the recycle valve).
+ALARMS (on measured values): PRESSURE_HI: reactor_pressure > 2760 (priority 2); PRESSURE_HIHI: reactor_pressure > 2900 (priority 1); PRESSURE_LO: reactor_pressure < 2550 (priority 3); TEMP_HI: reactor_temperature > 127 (priority 2); TEMP_HIHI: reactor_temperature > 140 (priority 1); TEMP_LO: reactor_temperature < 114 (priority 3); RLEVEL_HI: reactor_level > 92 (priority 2); RLEVEL_LO: reactor_level < 45 (priority 2); SLEVEL_HI: separator_level > 85 (priority 2); SLEVEL_LO: separator_level < 15 (priority 2); XLEVEL_HI: stripper_level > 85 (priority 2); XLEVEL_LO: stripper_level < 15 (priority 2); GRADE_DEV: |stripper_underflow_G_concentration - setpoint pct_g| > 3 for 0.5 h; RATE_DEV: |stripper_underflow - setpoint production_rate| > 2 for 1 h.
+SUPERVISORY ACTIONS (exactly one per decision, JSON):
+- {"type": "adjust_setpoints", "changes": {field: absolute_target}} with reactor_pressure in [2500, 2895], max move 100, cooldown 0.5 h; reactor_temperature in [115, 128], max move 3, cooldown 0.5 h; reactor_level in [50, 85], max move 10, cooldown 0.5 h; separator_level in [30, 70], max move 10, cooldown 0.5 h; stripper_level in [30, 70], max move 10, cooldown 0.5 h; production_rate in [11, 26], max move 4, cooldown 1 h; pct_g in [40, 65], max move 5, cooldown 2 h; ya in [50, 60], max move 2, cooldown 1 h; yac in [54, 62], max move 2, cooldown 1 h.
+- {"type": "reconfigure", "components": [...]} components: composition_control, safety_overrides (one-way arm).
+- {"type": "procedure", "name": ...} pre-audited: depressurize_step, min_stable_park, rate_cut_25, rate_cut_50 (rate_cut_25/50 cut the production
+  target by 25/50 %; depressurize_step lowers the pressure setpoint by 75 kPa; min_stable_park halves production
+  then settles pressure at 2600 kPa).
+- {"type": "substitute_instrument", "measurement": m, "method": "soft"} for m in ['reactor_pressure', 'reactor_temperature', 'separator_temperature', 'stripper_pressure']: the loop
+  uses the pre-engineered soft sensor instead of the transmitter (pressure: from separator/stripper pressure,
+  compressor work, recycle flow; temperature: from cooling-water outlet temperature and filtered valve position).
+- {"type": "no_action"};  {"type": "shutdown"} (orderly shutdown = failure; last resort).
+Actions land 0.05 h after the decision; at most 12 actions per episode; every action passes a static
+validator and a 6-h forward simulation on a nominal model (blind to faults) that vetoes actions predicted to
+make things worse than holding.
+ANTICIPATED ABNORMAL SITUATIONS (HAZOP catalogue; causes, not parameters): reactant-composition upsets in the
+A/C feed (stream 4) and C-header pressure loss; loss or restriction of the A feed, especially at elevated
+production; product-grade (%G) changes ordered by operations; reactor pressure or temperature transmitter
+failures (bias, drift, frozen reading); changes of production target.
+DIAGNOSIS VOCABULARY: none, feed_composition_upset, feed_loss_or_header_pressure, reactor_cooling_fault, condenser_cooling_fault, kinetics_drift, heat_transfer_degradation, valve_stiction_or_stuck, sensor_fault, operating_point_change, compound_fault, unknown.
+
+FEATURES available in the dict `f` (all measured/derived signals; floats unless noted):
+- f["t"] time (h); f["trigger"] str in {"new_alarm","alarm_hold","heartbeat","revision"}.
+- For each key K in P (reactor pressure kPa), T (reactor temperature C), RL, SL, XL (reactor/separator/stripper
+  level %), G (product %G mol%), PROD (production m3/h), SP (separator pressure), XP (stripper pressure),
+  ST (separator temp), XT (stripper temp), PURGE, FA, FD, FE, FAC (feed flows A, D, E, A+C), RECY (recycle),
+  RFEED (reactor feed), CW_R / CW_C (reactor / condenser cooling-water outlet temperature), WORK (compressor work),
+  XA / XC (reactor-feed A / C mol%):
+    f[K] latest value, f[K+"_avg"] 15-min mean, f[K+"_slope"] slope per hour over the last hour, f[K+"_slope_se"]
+    its standard error, f[K+"_dev_nom"] deviation of the 15-min mean from the nominal operating point.
+  For regulated K in P, T, RL, SL, XL, G, PROD also f[K+"_sp"] current setpoint and f[K+"_err"] mean minus setpoint.
+- For K in P, T, RL, SL, XL: f[K+"_margin"] margin to the trip limit (same units) and f[K+"_ttl"] projected
+  time-to-limit in hours (float('inf') if not approaching).
+- f["yA"], f["yAC"] reactor-feed A and A+C composition; f["yA_sp"], f["yAC_sp"]; f["yA_dev_nom"].
+- Valves (0-100 %): f["mv_d_feed"], f["mv_e_feed"], f["mv_a_feed"], f["mv_ac_feed"], f["mv_compressor_recycle"],
+  f["mv_purge"], f["mv_s_underflow"], f["mv_x_underflow"], f["mv_x_steam"], f["mv_r_cooling_water"],
+  f["mv_s_cooling_water"], f["mv_r_agitator_speed"]; each also with suffix "_std" (1-h standard deviation; a
+  value near 0 means the valve is not moving). f["saturated"] list of saturated valve names; f["n_saturated"].
+- Consistency residuals: f["dP_rs"] reactor-minus-separator pressure difference minus its nominal (kPa);
+  f["P_resid"] reactor pressure reading minus its soft-sensor estimate (kPa); f["T_resid"] reactor temperature
+  reading minus its soft-sensor estimate (C); f["P_soft"], f["T_soft"] the estimates.
+- Alarms: f["alarms"] sorted list of active alarm names; f["alarm_ages"] dict name -> hours active;
+  f["A_<NAME>"] bool per alarm; f["n_alarms"].
+- State: f["armed_composition"], f["armed_overrides"] bools; f["substituted"] list of instruments out of service;
+  f["cmd_pct_g"], f["cmd_production"] operator targets; f["G_cmd_err"], f["PROD_cmd_err"] delivered minus target.
+- During a revision call: f["rejected"] the rejected action dict and f["reasons"] list of rejection reasons.
+EXACT VALID KEYS of f (any other key raises an error): A_GRADE_DEV, A_PRESSURE_HI, A_PRESSURE_HIHI, A_PRESSURE_LO, A_RATE_DEV, A_RLEVEL_HI, A_RLEVEL_LO, A_SLEVEL_HI, A_SLEVEL_LO, A_TEMP_HI, A_TEMP_HIHI, A_TEMP_LO, A_XLEVEL_HI, A_XLEVEL_LO, CW_C, CW_C_avg, CW_C_dev_nom, CW_C_slope, CW_C_slope_se, CW_R, CW_R_avg, CW_R_dev_nom, CW_R_slope, CW_R_slope_se, FA, FAC, FAC_avg, FAC_dev_nom, FAC_slope, FAC_slope_se, FA_avg, FA_dev_nom, FA_slope, FA_slope_se, FD, FD_avg, FD_dev_nom, FD_slope, FD_slope_se, FE, FE_avg, FE_dev_nom, FE_slope, FE_slope_se, G, G_avg, G_cmd_err, G_dev_nom, G_err, G_slope, G_slope_se, G_sp, P, PROD, PROD_avg, PROD_cmd_err, PROD_dev_nom, PROD_err, PROD_slope, PROD_slope_se, PROD_sp, PURGE, PURGE_avg, PURGE_dev_nom, PURGE_slope, PURGE_slope_se, P_avg, P_dev_nom, P_err, P_margin, P_resid, P_slope, P_slope_se, P_soft, P_sp, P_ttl, RECY, RECY_avg, RECY_dev_nom, RECY_slope, RECY_slope_se, RFEED, RFEED_avg, RFEED_dev_nom, RFEED_slope, RFEED_slope_se, RL, RL_avg, RL_dev_nom, RL_err, RL_margin, RL_slope, RL_slope_se, RL_sp, RL_ttl, SL, SL_avg, SL_dev_nom, SL_err, SL_margin, SL_slope, SL_slope_se, SL_sp, SL_ttl, SP, SP_avg, SP_dev_nom, SP_slope, SP_slope_se, ST, ST_avg, ST_dev_nom, ST_slope, ST_slope_se, T, T_avg, T_dev_nom, T_err, T_margin, T_resid, T_slope, T_slope_se, T_soft, T_sp, T_ttl, WORK, WORK_avg, WORK_dev_nom, WORK_slope, WORK_slope_se, XA, XA_avg, XA_dev_nom, XA_slope, XA_slope_se, XC, XC_avg, XC_dev_nom, XC_slope, XC_slope_se, XL, XL_avg, XL_dev_nom, XL_err, XL_margin, XL_slope, XL_slope_se, XL_sp, XL_ttl, XP, XP_avg, XP_dev_nom, XP_slope, XP_slope_se, XT, XT_avg, XT_dev_nom, XT_slope, XT_slope_se, alarm_ages, alarms, armed_composition, armed_overrides, cmd_pct_g, cmd_production, dP_rs, mv_a_feed, mv_a_feed_std, mv_ac_feed, mv_ac_feed_std, mv_compressor_recycle, mv_compressor_recycle_std, mv_d_feed, mv_d_feed_std, mv_e_feed, mv_e_feed_std, mv_purge, mv_purge_std, mv_r_agitator_speed, mv_r_agitator_speed_std, mv_r_cooling_water, mv_r_cooling_water_std, mv_s_cooling_water, mv_s_cooling_water_std, mv_s_underflow, mv_s_underflow_std, mv_x_steam, mv_x_steam_std, mv_x_underflow, mv_x_underflow_std, n_alarms, n_saturated, reasons, rejected, saturated, substituted, t, trigger, yA, yAC, yAC_sp, yA_dev_nom, yA_sp.
+
+CONTRACT. Write a Python function `def playbook(f, mem):` (helper functions allowed). It is called at every
+supervisor invocation: when a new alarm annunciates, while alarms persist (at most every 0.25 h), and on a 2-h
+heartbeat. Return None for no action, or a dict {"rule": "<short id>", "diagnosis": <vocabulary item>,
+"why": "<few words>", "action": <exactly one action object as defined in the plant description>}.
+Allowed: if/else, comparisons, arithmetic, local variables, for-loops and comprehensions over lists, dict
+access f["key"] and f.get("key", default), and the builtins abs, min, max, len, round, float, int, bool, any,
+all, sum, sorted, isfinite, sqrt, exp, log, inf, and the methods get/items/keys/values/append/extend/update/
+pop/copy/setdefault. Forbidden: imports, while-loops, lambdas, classes, any other attribute access. `mem` is a dict that persists within one episode (use it to avoid repeating an action).
+Rules are evaluated in order; the first matching rule wins, so put the most safety-critical first. Setpoint
+targets are ABSOLUTE values and must respect the bounds and max move from the current setpoint f[K+"_sp"].
+Keep the playbook readable: one commented block per rule, under 150 lines.
+Reply with ONLY the complete code in a single ```python block.

@@ -1,0 +1,3839 @@
+[
+{
+"scenario": {
+"id": "A0000",
+"family": "A",
+"description": "family A, onset 4.28 h, params {'idv': 'idv_09', 'mag': 1.0, 'prod': 19.218744280492086}",
+"gt": [
+"none",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_09",
+"start_h": 4.282428919953476,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.218744280492086
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_09",
+"mag": 1.0,
+"prod": 19.218744280492086,
+"onset": 4.282428919953476
+}
+},
+"seeds": [
+1000
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0001",
+"family": "A",
+"description": "family A, onset 2.44 h, params {'idv': 'idv_05', 'mag': 1.0, 'prod': 23.36908963674158}",
+"gt": [
+"condenser_cooling_fault",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_05",
+"start_h": 2.4444748636988844,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_05",
+"mag": 1.0,
+"prod": 23.36908963674158,
+"onset": 2.4444748636988844
+}
+},
+"seeds": [
+1001
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0002",
+"family": "A",
+"description": "family A, onset 5.38 h, params {'idv': 'idv_02', 'mag': 1.0, 'prod': 20.48457573248504}",
+"gt": [
+"feed_composition_upset",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_02",
+"start_h": 5.380937900941325,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.48457573248504
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_02",
+"mag": 1.0,
+"prod": 20.48457573248504,
+"onset": 5.380937900941325
+}
+},
+"seeds": [
+1002
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0003",
+"family": "A",
+"description": "family A, onset 3.56 h, params {'idv': 'idv_05', 'mag': 1.0, 'prod': 20.141234684382518}",
+"gt": [
+"condenser_cooling_fault",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_05",
+"start_h": 3.555020380459781,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.141234684382518
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_05",
+"mag": 1.0,
+"prod": 20.141234684382518,
+"onset": 3.555020380459781
+}
+},
+"seeds": [
+1003
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0004",
+"family": "A",
+"description": "family A, onset 1.78 h, params {'idv': 'idv_03', 'mag': 1.0, 'prod': 19.93655105954453}",
+"gt": [
+"none",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_03",
+"start_h": 1.777141871889625,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.93655105954453
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_03",
+"mag": 1.0,
+"prod": 19.93655105954453,
+"onset": 1.777141871889625
+}
+},
+"seeds": [
+1004
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0005",
+"family": "A",
+"description": "family A, onset 3.79 h, params {'idv': 'idv_09', 'mag': 1.0, 'prod': 20.177149904957123}",
+"gt": [
+"none",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_09",
+"start_h": 3.79147549026854,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.177149904957123
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_09",
+"mag": 1.0,
+"prod": 20.177149904957123,
+"onset": 3.79147549026854
+}
+},
+"seeds": [
+1005
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0006",
+"family": "A",
+"description": "family A, onset 4.78 h, params {'idv': 'idv_12', 'mag': 1.0, 'prod': 20.7770420980576}",
+"gt": [
+"condenser_cooling_fault",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_12",
+"start_h": 4.783682147009454,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.7770420980576
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_12",
+"mag": 1.0,
+"prod": 20.7770420980576,
+"onset": 4.783682147009454
+}
+},
+"seeds": [
+1006
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0007",
+"family": "A",
+"description": "family A, onset 4.59 h, params {'idv': 'idv_08', 'mag': 1.0, 'prod': 23.281845388555716}",
+"gt": [
+"feed_composition_upset",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_08",
+"start_h": 4.590611249210529,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_08",
+"mag": 1.0,
+"prod": 23.281845388555716,
+"onset": 4.590611249210529
+}
+},
+"seeds": [
+1007
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0008",
+"family": "A",
+"description": "family A, onset 1.30 h, params {'idv': 'idv_02', 'mag': 1.0, 'prod': 20.954672318731337}",
+"gt": [
+"feed_composition_upset",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_02",
+"start_h": 1.303863223170589,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.954672318731337
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_02",
+"mag": 1.0,
+"prod": 20.954672318731337,
+"onset": 1.303863223170589
+}
+},
+"seeds": [
+1008
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0009",
+"family": "A",
+"description": "family A, onset 5.81 h, params {'idv': 'idv_03', 'mag': 1.0, 'prod': 23.02948541524105}",
+"gt": [
+"none",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_03",
+"start_h": 5.809150138998571,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_03",
+"mag": 1.0,
+"prod": 23.02948541524105,
+"onset": 5.809150138998571
+}
+},
+"seeds": [
+1009
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0010",
+"family": "A",
+"description": "family A, onset 1.68 h, params {'idv': 'idv_04', 'mag': 1.0, 'prod': 23.405666404031063}",
+"gt": [
+"reactor_cooling_fault",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_04",
+"start_h": 1.6756488179540643,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_04",
+"mag": 1.0,
+"prod": 23.405666404031063,
+"onset": 1.6756488179540643
+}
+},
+"seeds": [
+1010
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0011",
+"family": "A",
+"description": "family A, onset 4.67 h, params {'idv': 'idv_11', 'mag': 1.0, 'prod': 20.56003035046268}",
+"gt": [
+"reactor_cooling_fault",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_11",
+"start_h": 4.671607937274321,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.56003035046268
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_11",
+"mag": 1.0,
+"prod": 20.56003035046268,
+"onset": 4.671607937274321
+}
+},
+"seeds": [
+1011
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0012",
+"family": "A",
+"description": "family A, onset 1.69 h, params {'idv': 'idv_03', 'mag': 1.0, 'prod': 23.669123325408975}",
+"gt": [
+"none",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_03",
+"start_h": 1.692812566855796,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+23.669123325408975
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_03",
+"mag": 1.0,
+"prod": 23.669123325408975,
+"onset": 1.692812566855796
+}
+},
+"seeds": [
+1012
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0013",
+"family": "A",
+"description": "family A, onset 1.22 h, params {'idv': 'idv_12', 'mag': 1.0, 'prod': 20.219086631834575}",
+"gt": [
+"condenser_cooling_fault",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_12",
+"start_h": 1.2174462324039155,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.219086631834575
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_12",
+"mag": 1.0,
+"prod": 20.219086631834575,
+"onset": 1.2174462324039155
+}
+},
+"seeds": [
+1013
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0014",
+"family": "A",
+"description": "family A, onset 1.19 h, params {'idv': 'idv_10', 'mag': 1.0, 'prod': 19.371800439253494}",
+"gt": [
+"none",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_10",
+"start_h": 1.193870787092179,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.371800439253494
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_10",
+"mag": 1.0,
+"prod": 19.371800439253494,
+"onset": 1.193870787092179
+}
+},
+"seeds": [
+1014
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "A0015",
+"family": "A",
+"description": "family A, onset 1.28 h, params {'idv': 'idv_06', 'mag': 1.0, 'prod': 19.67229837866493}",
+"gt": [
+"feed_loss_or_header_pressure",
+"none"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 1.2793156747091907,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.67229837866493
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"idv": "idv_06",
+"mag": 1.0,
+"prod": 19.67229837866493,
+"onset": 1.2793156747091907
+}
+},
+"seeds": [
+1015
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "S0000",
+"family": "S",
+"description": "family S, onset 1.59 h, params {'dur': inf, 'prod': 23.845747063145197, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.5856966331229834,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+23.845747063145197
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 23.845747063145197,
+"extra": "none",
+"onset": 1.5856966331229834
+}
+},
+"seeds": [
+1000
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0001",
+"family": "S",
+"description": "family S, onset 1.84 h, params {'dur': inf, 'prod': 19.291019260240063, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.838203606916148,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.291019260240063
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 19.291019260240063,
+"extra": "none",
+"onset": 1.838203606916148
+}
+},
+"seeds": [
+1001
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0002",
+"family": "S",
+"description": "family S, onset 1.45 h, params {'dur': inf, 'prod': 19.262238363794545, 'extra': 'idv_07'}",
+"gt": [
+"feed_composition_upset",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.448119153449869,
+"magnitude": 1.0,
+"end_h": null
+},
+{
+"idv": "idv_07",
+"start_h": 1.7968493391324376,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.262238363794545
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 19.262238363794545,
+"extra": "idv_07",
+"onset": 1.448119153449869
+}
+},
+"seeds": [
+1002
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0004",
+"family": "S",
+"description": "family S, onset 3.73 h, params {'dur': inf, 'prod': 24.286941483712752, 'extra': 'idv_02'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.7301074837991175,
+"magnitude": 1.0,
+"end_h": null
+},
+{
+"idv": "idv_02",
+"start_h": 5.011406736175638,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.286941483712752
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 24.286941483712752,
+"extra": "idv_02",
+"onset": 3.7301074837991175
+}
+},
+"seeds": [
+1004
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0005",
+"family": "S",
+"description": "family S, onset 1.67 h, params {'dur': inf, 'prod': 26.89099340056671, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.6654719993867446,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.89099340056671
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 26.89099340056671,
+"extra": "none",
+"onset": 1.6654719993867446
+}
+},
+"seeds": [
+1005
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0006",
+"family": "S",
+"description": "family S, onset 5.64 h, params {'dur': inf, 'prod': 20.832956057620542, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.64439605709479,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+20.832956057620542
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 20.832956057620542,
+"extra": "none",
+"onset": 5.64439605709479
+}
+},
+"seeds": [
+1006
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0007",
+"family": "S",
+"description": "family S, onset 3.32 h, params {'dur': inf, 'prod': 26.75908951504722, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.3160246040996766,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.75908951504722
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 26.75908951504722,
+"extra": "none",
+"onset": 3.3160246040996766
+}
+},
+"seeds": [
+1007
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0008",
+"family": "S",
+"description": "family S, onset 5.09 h, params {'dur': inf, 'prod': 24.263167011328267, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.089457901653493,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.263167011328267
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 24.263167011328267,
+"extra": "none",
+"onset": 5.089457901653493
+}
+},
+"seeds": [
+1008
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0009",
+"family": "S",
+"description": "family S, onset 4.60 h, params {'dur': inf, 'prod': 21.50975581359218, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 4.6016985396560415,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+21.50975581359218
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 21.50975581359218,
+"extra": "none",
+"onset": 4.6016985396560415
+}
+},
+"seeds": [
+1009
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0010",
+"family": "S",
+"description": "family S, onset 1.83 h, params {'dur': 4.334705125846572, 'prod': 19.48323203148977, 'extra': 'idv_07'}",
+"gt": [
+"feed_composition_upset",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.8303199710998292,
+"magnitude": 1.0,
+"end_h": 6.165025096946401
+},
+{
+"idv": "idv_07",
+"start_h": 1.917232999886632,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.48323203148977
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": 4.334705125846572,
+"prod": 19.48323203148977,
+"extra": "idv_07",
+"onset": 1.8303199710998292
+}
+},
+"seeds": [
+1010
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0011",
+"family": "S",
+"description": "family S, onset 2.09 h, params {'dur': inf, 'prod': 19.843456857344027, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 2.087532759894506,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+19.843456857344027
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 19.843456857344027,
+"extra": "none",
+"onset": 2.087532759894506
+}
+},
+"seeds": [
+1011
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0012",
+"family": "S",
+"description": "family S, onset 1.58 h, params {'dur': inf, 'prod': 23.561401055931913, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.5837584576809913,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+23.561401055931913
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 23.561401055931913,
+"extra": "none",
+"onset": 1.5837584576809913
+}
+},
+"seeds": [
+1012
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0013",
+"family": "S",
+"description": "family S, onset 5.87 h, params {'dur': inf, 'prod': 26.20413061414926, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.870064004586544,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.20413061414926
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 26.20413061414926,
+"extra": "none",
+"onset": 5.870064004586544
+}
+},
+"seeds": [
+1013
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0014",
+"family": "S",
+"description": "family S, onset 3.92 h, params {'dur': 4.565779533155155, 'prod': 22.890634926371025, 'extra': 'idv_07'}",
+"gt": [
+"feed_composition_upset",
+"feed_loss_or_header_pressure"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.9241628157710995,
+"magnitude": 1.0,
+"end_h": 8.489942348926254
+},
+{
+"idv": "idv_07",
+"start_h": 4.575612982079395,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"dur": 4.565779533155155,
+"prod": 22.890634926371025,
+"extra": "idv_07",
+"onset": 3.9241628157710995
+}
+},
+"seeds": [
+1014
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0015",
+"family": "S",
+"description": "family S, onset 3.56 h, params {'dur': inf, 'prod': 26.355801481466838, 'extra': 'idv_02'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.557707554672043,
+"magnitude": 1.0,
+"end_h": null
+},
+{
+"idv": "idv_02",
+"start_h": 3.926906142172778,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.355801481466838
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 26.355801481466838,
+"extra": "idv_02",
+"onset": 3.557707554672043
+}
+},
+"seeds": [
+1015
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0016",
+"family": "S",
+"description": "family S, onset 1.17 h, params {'dur': inf, 'prod': 27.069043938850335, 'extra': 'idv_02'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.16677124403403,
+"magnitude": 1.0,
+"end_h": null
+},
+{
+"idv": "idv_02",
+"start_h": 2.5051050252479223,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.069043938850335
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 27.069043938850335,
+"extra": "idv_02",
+"onset": 1.16677124403403
+}
+},
+"seeds": [
+1016
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0017",
+"family": "S",
+"description": "family S, onset 1.63 h, params {'dur': inf, 'prod': 27.63572767417544, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 1.634230223513459,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.63572767417544
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 27.63572767417544,
+"extra": "none",
+"onset": 1.634230223513459
+}
+},
+"seeds": [
+1017
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0019",
+"family": "S",
+"description": "family S, onset 5.62 h, params {'dur': inf, 'prod': 23.39797405573204, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.615064501731889,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"dur": Infinity,
+"prod": 23.39797405573204,
+"extra": "none",
+"onset": 5.615064501731889
+}
+},
+"seeds": [
+1019
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "S0003",
+"family": "S",
+"description": "family S, onset 4.42 h, params {'dur': 1.5413389733490483, 'prod': 23.62182055879059, 'extra': 'idv_02'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 4.421321055508921,
+"magnitude": 1.0,
+"end_h": 5.962660028857969
+},
+{
+"idv": "idv_02",
+"start_h": 5.050767706309367,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+23.62182055879059
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": 1.5413389733490483,
+"prod": 23.62182055879059,
+"extra": "idv_02",
+"onset": 4.421321055508921
+}
+},
+"seeds": [
+1003
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "S0018",
+"family": "S",
+"description": "family S, onset 4.64 h, params {'dur': 2.896514693161305, 'prod': 21.028808672211685, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 4.635133070905687,
+"magnitude": 1.0,
+"end_h": 7.531647764066992
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+21.028808672211685
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": 2.896514693161305,
+"prod": 21.028808672211685,
+"extra": "none",
+"onset": 4.635133070905687
+}
+},
+"seeds": [
+1018
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "S0025",
+"family": "S",
+"description": "family S, onset 3.14 h, params {'dur': 1.762176594958885, 'prod': 24.45134512171814, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 3.1398074166516174,
+"magnitude": 1.0,
+"end_h": 4.9019840116105025
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.45134512171814
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": 1.762176594958885,
+"prod": 24.45134512171814,
+"extra": "none",
+"onset": 3.1398074166516174
+}
+},
+"seeds": [
+1025
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "S0026",
+"family": "S",
+"description": "family S, onset 5.44 h, params {'dur': 2.5030474209697733, 'prod': 25.803434256139834, 'extra': 'none'}",
+"gt": [
+"feed_composition_upset",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_01",
+"start_h": 5.440101555148107,
+"magnitude": 1.0,
+"end_h": 7.943148976117881
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.803434256139834
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"dur": 2.5030474209697733,
+"prod": 25.803434256139834,
+"extra": "none",
+"onset": 5.440101555148107
+}
+},
+"seeds": [
+1026
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "P0001",
+"family": "P",
+"description": "family P, onset 1.99 h, params {'prod': 25.616021360904877, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 1.985083682953809,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.616021360904877
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 25.616021360904877,
+"kind": "idv6",
+"onset": 1.985083682953809
+}
+},
+"seeds": [
+1001
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0002",
+"family": "P",
+"description": "family P, onset 5.40 h, params {'prod': 29.907016027051476, 'kind': 'a_cap8'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "a_feed_valve",
+"kind": "cap_max",
+"start_h": 5.4010943793547455,
+"magnitude": 8.463910223514509,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+29.907016027051476
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 29.907016027051476,
+"kind": "a_cap8",
+"onset": 5.4010943793547455
+}
+},
+"seeds": [
+1002
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0005",
+"family": "P",
+"description": "family P, onset 2.38 h, params {'prod': 28.734657125446425, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 2.3786509938760267,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.734657125446425
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 28.734657125446425,
+"kind": "idv6",
+"onset": 2.3786509938760267
+}
+},
+"seeds": [
+1005
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0006",
+"family": "P",
+"description": "family P, onset 2.36 h, params {'prod': 27.198782173225325, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 2.356850220343911,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.198782173225325
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 27.198782173225325,
+"kind": "idv6",
+"onset": 2.356850220343911
+}
+},
+"seeds": [
+1006
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0007",
+"family": "P",
+"description": "family P, onset 3.67 h, params {'prod': 29.544426136426484, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 3.6695611287198586,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+29.544426136426484
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 29.544426136426484,
+"kind": "idv6",
+"onset": 3.6695611287198586
+}
+},
+"seeds": [
+1007
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0008",
+"family": "P",
+"description": "family P, onset 2.31 h, params {'prod': 27.92619541369624, 'kind': 'a_cap6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "a_feed_valve",
+"kind": "cap_max",
+"start_h": 2.3069100360241293,
+"magnitude": 5.82508131053496,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.92619541369624
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 27.92619541369624,
+"kind": "a_cap6",
+"onset": 2.3069100360241293
+}
+},
+"seeds": [
+1008
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0009",
+"family": "P",
+"description": "family P, onset 5.27 h, params {'prod': 24.615120880716265, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 5.266535116310586,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.615120880716265
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 24.615120880716265,
+"kind": "idv6",
+"onset": 5.266535116310586
+}
+},
+"seeds": [
+1009
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0011",
+"family": "P",
+"description": "family P, onset 3.04 h, params {'prod': 27.907151801240502, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 3.040278698841239,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.907151801240502
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 27.907151801240502,
+"kind": "idv6",
+"onset": 3.040278698841239
+}
+},
+"seeds": [
+1011
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0012",
+"family": "P",
+"description": "family P, onset 2.62 h, params {'prod': 28.099002179940996, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 2.6211998549446873,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.099002179940996
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 28.099002179940996,
+"kind": "idv6",
+"onset": 2.6211998549446873
+}
+},
+"seeds": [
+1012
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0013",
+"family": "P",
+"description": "family P, onset 5.53 h, params {'prod': 28.86301446491056, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 5.525785413270703,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.86301446491056
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 28.86301446491056,
+"kind": "idv6",
+"onset": 5.525785413270703
+}
+},
+"seeds": [
+1013
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0014",
+"family": "P",
+"description": "family P, onset 3.08 h, params {'prod': 26.712909608681276, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 3.0846987320061166,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+26.712909608681276
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 26.712909608681276,
+"kind": "idv6",
+"onset": 3.0846987320061166
+}
+},
+"seeds": [
+1014
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0015",
+"family": "P",
+"description": "family P, onset 4.78 h, params {'prod': 28.236630185671306, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 4.775083549060626,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+28.236630185671306
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 28.236630185671306,
+"kind": "idv6",
+"onset": 4.775083549060626
+}
+},
+"seeds": [
+1015
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0017",
+"family": "P",
+"description": "family P, onset 5.72 h, params {'prod': 25.78144511816312, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 5.718491261009346,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.78144511816312
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 25.78144511816312,
+"kind": "idv6",
+"onset": 5.718491261009346
+}
+},
+"seeds": [
+1017
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0019",
+"family": "P",
+"description": "family P, onset 5.49 h, params {'prod': 29.025448549154024, 'kind': 'a_cap8'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "a_feed_valve",
+"kind": "cap_max",
+"start_h": 5.49166470653869,
+"magnitude": 7.910135232228198,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+29.025448549154024
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 29.025448549154024,
+"kind": "a_cap8",
+"onset": 5.49166470653869
+}
+},
+"seeds": [
+1019
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0021",
+"family": "P",
+"description": "family P, onset 5.29 h, params {'prod': 29.367127569767845, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 5.28642920969526,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+29.367127569767845
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 29.367127569767845,
+"kind": "idv6",
+"onset": 5.28642920969526
+}
+},
+"seeds": [
+1021
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0023",
+"family": "P",
+"description": "family P, onset 2.97 h, params {'prod': 25.999197797727074, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 2.9685820284787443,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.999197797727074
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 25.999197797727074,
+"kind": "idv6",
+"onset": 2.9685820284787443
+}
+},
+"seeds": [
+1023
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "P0000",
+"family": "P",
+"description": "family P, onset 2.84 h, params {'prod': 25.282079569485788, 'kind': 'a_cap10'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "a_feed_valve",
+"kind": "cap_max",
+"start_h": 2.8394079648905146,
+"magnitude": 9.794625005970635,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+25.282079569485788
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 25.282079569485788,
+"kind": "a_cap10",
+"onset": 2.8394079648905146
+}
+},
+"seeds": [
+1000
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "P0003",
+"family": "P",
+"description": "family P, onset 2.04 h, params {'prod': 27.109971387523345, 'kind': 'a_cap15'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "a_feed_valve",
+"kind": "cap_max",
+"start_h": 2.036613210746679,
+"magnitude": 14.827606619098693,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+27.109971387523345
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 27.109971387523345,
+"kind": "a_cap15",
+"onset": 2.036613210746679
+}
+},
+"seeds": [
+1003
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "P0004",
+"family": "P",
+"description": "family P, onset 3.82 h, params {'prod': 24.168865355681046, 'kind': 'idv6'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [
+{
+"idv": "idv_06",
+"start_h": 3.823469899272884,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.168865355681046
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 24.168865355681046,
+"kind": "idv6",
+"onset": 3.823469899272884
+}
+},
+"seeds": [
+1004
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "P0010",
+"family": "P",
+"description": "family P, onset 2.69 h, params {'prod': 24.68095172731237, 'kind': 'a_cap5'}",
+"gt": [
+"feed_loss_or_header_pressure",
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [
+{
+"mv": "a_feed_valve",
+"kind": "cap_max",
+"start_h": 2.688848158100357,
+"magnitude": 5.049901728964192,
+"end_h": null
+}
+],
+"setpoint_shifts": [
+[
+0.5,
+[
+[
+"production_rate",
+24.68095172731237
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"prod": 24.68095172731237,
+"kind": "a_cap5",
+"onset": 2.688848158100357
+}
+},
+"seeds": [
+1010
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "Q0000",
+"family": "Q",
+"description": "family Q, onset 2.90 h, params {'grade': 45.1048917674459, 'idv8': True}",
+"gt": [
+"operating_point_change",
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_08",
+"start_h": 2.898606996005994,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+2.898606996005994,
+[
+[
+"pct_g",
+45.1048917674459
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 45.1048917674459,
+"idv8": true,
+"onset": 2.898606996005994
+}
+},
+"seeds": [
+1000
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0001",
+"family": "Q",
+"description": "family Q, onset 2.26 h, params {'grade': 45.7331121179259, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+2.2582402107871005,
+[
+[
+"pct_g",
+45.7331121179259
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 45.7331121179259,
+"idv8": false,
+"onset": 2.2582402107871005
+}
+},
+"seeds": [
+1001
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0002",
+"family": "Q",
+"description": "family Q, onset 3.94 h, params {'grade': 42.72253526029201, 'idv8': True}",
+"gt": [
+"operating_point_change",
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_08",
+"start_h": 3.944486620872609,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+3.944486620872609,
+[
+[
+"pct_g",
+42.72253526029201
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 42.72253526029201,
+"idv8": true,
+"onset": 3.944486620872609
+}
+},
+"seeds": [
+1002
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0003",
+"family": "Q",
+"description": "family Q, onset 5.41 h, params {'grade': 60.835363103941056, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+5.408973645873547,
+[
+[
+"pct_g",
+60.835363103941056
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 60.835363103941056,
+"idv8": false,
+"onset": 5.408973645873547
+}
+},
+"seeds": [
+1003
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0004",
+"family": "Q",
+"description": "family Q, onset 5.38 h, params {'grade': 45.29416552197946, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+5.379328473676142,
+[
+[
+"pct_g",
+45.29416552197946
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 45.29416552197946,
+"idv8": false,
+"onset": 5.379328473676142
+}
+},
+"seeds": [
+1004
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0005",
+"family": "Q",
+"description": "family Q, onset 3.52 h, params {'grade': 62.231804334873274, 'idv8': True}",
+"gt": [
+"operating_point_change",
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_08",
+"start_h": 3.5201929955470055,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+3.5201929955470055,
+[
+[
+"pct_g",
+62.231804334873274
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 62.231804334873274,
+"idv8": true,
+"onset": 3.5201929955470055
+}
+},
+"seeds": [
+1005
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0006",
+"family": "Q",
+"description": "family Q, onset 3.38 h, params {'grade': 63.82623417881203, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+3.3804749674262626,
+[
+[
+"pct_g",
+63.82623417881203
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 63.82623417881203,
+"idv8": false,
+"onset": 3.3804749674262626
+}
+},
+"seeds": [
+1006
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0007",
+"family": "Q",
+"description": "family Q, onset 3.03 h, params {'grade': 62.09808115670037, 'idv8': True}",
+"gt": [
+"operating_point_change",
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_08",
+"start_h": 3.034307476687995,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+3.034307476687995,
+[
+[
+"pct_g",
+62.09808115670037
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 62.09808115670037,
+"idv8": true,
+"onset": 3.034307476687995
+}
+},
+"seeds": [
+1007
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0008",
+"family": "Q",
+"description": "family Q, onset 4.17 h, params {'grade': 46.76985084811135, 'idv8': True}",
+"gt": [
+"operating_point_change",
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_08",
+"start_h": 4.1705801365466595,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+4.1705801365466595,
+[
+[
+"pct_g",
+46.76985084811135
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 46.76985084811135,
+"idv8": true,
+"onset": 4.1705801365466595
+}
+},
+"seeds": [
+1008
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0009",
+"family": "Q",
+"description": "family Q, onset 3.40 h, params {'grade': 43.62469740225226, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+3.4030830957127707,
+[
+[
+"pct_g",
+43.62469740225226
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 43.62469740225226,
+"idv8": false,
+"onset": 3.4030830957127707
+}
+},
+"seeds": [
+1009
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0010",
+"family": "Q",
+"description": "family Q, onset 4.77 h, params {'grade': 61.58175618103476, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+4.765010836405223,
+[
+[
+"pct_g",
+61.58175618103476
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 61.58175618103476,
+"idv8": false,
+"onset": 4.765010836405223
+}
+},
+"seeds": [
+1010
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0011",
+"family": "Q",
+"description": "family Q, onset 4.41 h, params {'grade': 46.612100389578735, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+4.4054691001266715,
+[
+[
+"pct_g",
+46.612100389578735
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 46.612100389578735,
+"idv8": false,
+"onset": 4.4054691001266715
+}
+},
+"seeds": [
+1011
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0012",
+"family": "Q",
+"description": "family Q, onset 2.15 h, params {'grade': 62.54898406046314, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+2.151301100847571,
+[
+[
+"pct_g",
+62.54898406046314
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 62.54898406046314,
+"idv8": false,
+"onset": 2.151301100847571
+}
+},
+"seeds": [
+1012
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0013",
+"family": "Q",
+"description": "family Q, onset 5.82 h, params {'grade': 62.61607188765132, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+5.8152926260159505,
+[
+[
+"pct_g",
+62.61607188765132
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 62.61607188765132,
+"idv8": false,
+"onset": 5.8152926260159505
+}
+},
+"seeds": [
+1013
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0014",
+"family": "Q",
+"description": "family Q, onset 5.49 h, params {'grade': 64.66458882558884, 'idv8': True}",
+"gt": [
+"operating_point_change",
+"feed_composition_upset"
+],
+"idv_events": [
+{
+"idv": "idv_08",
+"start_h": 5.4918603789831195,
+"magnitude": 1.0,
+"end_h": null
+}
+],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+5.4918603789831195,
+[
+[
+"pct_g",
+64.66458882558884
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 64.66458882558884,
+"idv8": true,
+"onset": 5.4918603789831195
+}
+},
+"seeds": [
+1014
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "Q0015",
+"family": "Q",
+"description": "family Q, onset 5.97 h, params {'grade': 63.80213738263914, 'idv8': False}",
+"gt": [
+"operating_point_change"
+],
+"idv_events": [],
+"sensor_faults": [],
+"actuator_faults": [],
+"setpoint_shifts": [
+[
+5.965215143151864,
+[
+[
+"pct_g",
+63.80213738263914
+]
+]
+]
+],
+"horizon_h": 48.0,
+"params": {
+"grade": 63.80213738263914,
+"idv8": false,
+"onset": 5.965215143151864
+}
+},
+"seeds": [
+1015
+],
+"label": "quality_gap"
+},
+{
+"scenario": {
+"id": "SN0003",
+"family": "SN",
+"description": "family SN, onset 1.03 h, params {'meas': 'reactor_temperature', 'kind': 'freeze', 'mag': 0.0}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "freeze",
+"start_h": 1.034077543327481,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "freeze",
+"mag": 0.0,
+"onset": 1.034077543327481
+}
+},
+"seeds": [
+1003
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0004",
+"family": "SN",
+"description": "family SN, onset 3.04 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -16.309568250881277}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 3.043816271817438,
+"magnitude": -16.309568250881277,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -16.309568250881277,
+"onset": 3.043816271817438
+}
+},
+"seeds": [
+1004
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0005",
+"family": "SN",
+"description": "family SN, onset 1.06 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -16.15854117541784}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 1.0622461456626988,
+"magnitude": -16.15854117541784,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -16.15854117541784,
+"onset": 1.0622461456626988
+}
+},
+"seeds": [
+1005
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0007",
+"family": "SN",
+"description": "family SN, onset 4.70 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -16.922008808584945}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 4.701213860861687,
+"magnitude": -16.922008808584945,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -16.922008808584945,
+"onset": 4.701213860861687
+}
+},
+"seeds": [
+1007
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0008",
+"family": "SN",
+"description": "family SN, onset 5.81 h, params {'meas': 'reactor_temperature', 'kind': 'drift', 'mag': -2.73867872652206}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "drift",
+"start_h": 5.810560320905923,
+"magnitude": -2.73867872652206,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "drift",
+"mag": -2.73867872652206,
+"onset": 5.810560320905923
+}
+},
+"seeds": [
+1008
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0009",
+"family": "SN",
+"description": "family SN, onset 2.09 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -41.516887303691874}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 2.088882907427187,
+"magnitude": -41.516887303691874,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -41.516887303691874,
+"onset": 2.088882907427187
+}
+},
+"seeds": [
+1009
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0011",
+"family": "SN",
+"description": "family SN, onset 4.11 h, params {'meas': 'reactor_pressure', 'kind': 'freeze', 'mag': 0.0}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "freeze",
+"start_h": 4.105958166725194,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "freeze",
+"mag": 0.0,
+"onset": 4.105958166725194
+}
+},
+"seeds": [
+1011
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0012",
+"family": "SN",
+"description": "family SN, onset 3.71 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -42.88000890905889}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 3.708422489054011,
+"magnitude": -42.88000890905889,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -42.88000890905889,
+"onset": 3.708422489054011
+}
+},
+"seeds": [
+1012
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0013",
+"family": "SN",
+"description": "family SN, onset 5.89 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -21.11210305767945}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 5.8877213755475175,
+"magnitude": -21.11210305767945,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -21.11210305767945,
+"onset": 5.8877213755475175
+}
+},
+"seeds": [
+1013
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0014",
+"family": "SN",
+"description": "family SN, onset 5.58 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -15.63425630113764}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 5.582262096708733,
+"magnitude": -15.63425630113764,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -15.63425630113764,
+"onset": 5.582262096708733
+}
+},
+"seeds": [
+1014
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0015",
+"family": "SN",
+"description": "family SN, onset 4.65 h, params {'meas': 'reactor_pressure', 'kind': 'freeze', 'mag': 0.0}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "freeze",
+"start_h": 4.647655303046292,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "freeze",
+"mag": 0.0,
+"onset": 4.647655303046292
+}
+},
+"seeds": [
+1015
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0016",
+"family": "SN",
+"description": "family SN, onset 2.18 h, params {'meas': 'reactor_temperature', 'kind': 'drift', 'mag': -2.838146234676039}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "drift",
+"start_h": 2.1843925730404044,
+"magnitude": -2.838146234676039,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "drift",
+"mag": -2.838146234676039,
+"onset": 2.1843925730404044
+}
+},
+"seeds": [
+1016
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0017",
+"family": "SN",
+"description": "family SN, onset 4.12 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -33.31814908830712}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 4.12399235710338,
+"magnitude": -33.31814908830712,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -33.31814908830712,
+"onset": 4.12399235710338
+}
+},
+"seeds": [
+1017
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0018",
+"family": "SN",
+"description": "family SN, onset 4.29 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -12.764075445117136}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 4.287200040106626,
+"magnitude": -12.764075445117136,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -12.764075445117136,
+"onset": 4.287200040106626
+}
+},
+"seeds": [
+1018
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0019",
+"family": "SN",
+"description": "family SN, onset 2.74 h, params {'meas': 'reactor_pressure', 'kind': 'freeze', 'mag': 0.0}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "freeze",
+"start_h": 2.7374064924131236,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "freeze",
+"mag": 0.0,
+"onset": 2.7374064924131236
+}
+},
+"seeds": [
+1019
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0022",
+"family": "SN",
+"description": "family SN, onset 4.28 h, params {'meas': 'reactor_temperature', 'kind': 'drift', 'mag': -1.961293900331579}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "drift",
+"start_h": 4.280257663946301,
+"magnitude": -1.961293900331579,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "drift",
+"mag": -1.961293900331579,
+"onset": 4.280257663946301
+}
+},
+"seeds": [
+1022
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0024",
+"family": "SN",
+"description": "family SN, onset 1.89 h, params {'meas': 'reactor_pressure', 'kind': 'drift', 'mag': -19.2443371964275}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "drift",
+"start_h": 1.893546339628023,
+"magnitude": -19.2443371964275,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "drift",
+"mag": -19.2443371964275,
+"onset": 1.893546339628023
+}
+},
+"seeds": [
+1024
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0025",
+"family": "SN",
+"description": "family SN, onset 4.37 h, params {'meas': 'reactor_temperature', 'kind': 'drift', 'mag': -2.88951662937193}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "drift",
+"start_h": 4.372649092763941,
+"magnitude": -2.88951662937193,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "drift",
+"mag": -2.88951662937193,
+"onset": 4.372649092763941
+}
+},
+"seeds": [
+1025
+],
+"label": "rescuable"
+},
+{
+"scenario": {
+"id": "SN0000",
+"family": "SN",
+"description": "family SN, onset 3.73 h, params {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -121.48614586341408}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 3.7287080328357756,
+"magnitude": -121.48614586341408,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -121.48614586341408,
+"onset": 3.7287080328357756
+}
+},
+"seeds": [
+1000
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "SN0001",
+"family": "SN",
+"description": "family SN, onset 3.58 h, params {'meas': 'reactor_pressure', 'kind': 'bias', 'mag': -164.03400095930803}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "bias",
+"start_h": 3.5773255546213965,
+"magnitude": -164.03400095930803,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "bias",
+"mag": -164.03400095930803,
+"onset": 3.5773255546213965
+}
+},
+"seeds": [
+1001
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "SN0002",
+"family": "SN",
+"description": "family SN, onset 3.39 h, params {'meas': 'reactor_temperature', 'kind': 'bias', 'mag': -3.394476504522873}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "bias",
+"start_h": 3.3938040895109185,
+"magnitude": -3.394476504522873,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "bias",
+"mag": -3.394476504522873,
+"onset": 3.3938040895109185
+}
+},
+"seeds": [
+1002
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "SN0006",
+"family": "SN",
+"description": "family SN, onset 1.02 h, params {'meas': 'reactor_temperature', 'kind': 'bias', 'mag': -5.3345433862303295}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "bias",
+"start_h": 1.0234155004532237,
+"magnitude": -5.3345433862303295,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "bias",
+"mag": -5.3345433862303295,
+"onset": 1.0234155004532237
+}
+},
+"seeds": [
+1006
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "SN0010",
+"family": "SN",
+"description": "family SN, onset 5.76 h, params {'meas': 'reactor_pressure', 'kind': 'freeze', 'mag': 0.0}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_pressure",
+"kind": "freeze",
+"start_h": 5.762273474149331,
+"magnitude": 0.0,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_pressure",
+"kind": "freeze",
+"mag": 0.0,
+"onset": 5.762273474149331
+}
+},
+"seeds": [
+1010
+],
+"label": "benign"
+},
+{
+"scenario": {
+"id": "SN0020",
+"family": "SN",
+"description": "family SN, onset 4.53 h, params {'meas': 'reactor_temperature', 'kind': 'bias', 'mag': -3.411842878416463}",
+"gt": [
+"sensor_fault"
+],
+"idv_events": [],
+"sensor_faults": [
+{
+"measurement": "reactor_temperature",
+"kind": "bias",
+"start_h": 4.525133338752214,
+"magnitude": -3.411842878416463,
+"end_h": null
+}
+],
+"actuator_faults": [],
+"setpoint_shifts": [],
+"horizon_h": 48.0,
+"params": {
+"meas": "reactor_temperature",
+"kind": "bias",
+"mag": -3.411842878416463,
+"onset": 4.525133338752214
+}
+},
+"seeds": [
+1020
+],
+"label": "benign"
+}
+]

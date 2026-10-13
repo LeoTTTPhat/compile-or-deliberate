@@ -1,0 +1,44 @@
+training batch: 78 scenarios; model qwen3-coder:30b; seed 1; budget 200000
+[it 1] v0 sr=0.641 score=0.585 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20 tokens=5000 (46s)
+  checkpoint v0: tokens=5000 best it=1 sr=0.641 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20
+[it 2] child sr=0.641 score=0.584 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20 | best 0.641 tokens=17662 (234s)
+[it 3] child sr=0.641 score=0.585 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20 | best 0.641 tokens=30512 (408s)
+  falsification round 1: incumbent failed 12/48 fresh scenarios; batch -> 90
+    tune: moved rule block 13 ['PRESSURE_APPROACHING_TRIP'] to front -> 0.933
+    tune: P_resid 50 -> 75 -> 0.933
+  tuned incumbent: 0.556 -> 0.933 (24 batch evals, CPU only)
+  checkpoint B25000: tokens=30512 best it=1 sr=0.933 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/22
+[it 4] child sr=0.556 score=0.500 A: 12/12, P: 8/17, Q: 12/12, S: 2/27, SN: 16/22 | best 0.933 tokens=43095 (1814s)
+[it 5] child sr=0.933 score=0.879 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/22 | best 0.933 tokens=54629 (1937s)
+  checkpoint B50000: tokens=54629 best it=1 sr=0.933 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/22
+[it 6] child sr=0.933 score=0.879 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/22 | best 0.933 tokens=66666 (2103s)
+  falsification round 2: incumbent failed 3/48 fresh scenarios; batch -> 93
+    tune: moved rule block 2 ['PRESSURE_HIHI'] to front -> 0.914
+  tuned incumbent: 0.903 -> 0.914 (24 batch evals, CPU only)
+[it 7] child sr=0.903 score=0.849 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/25 | best 0.914 tokens=78290 (3549s)
+[it 8] child sr=0.903 score=0.849 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/25 | best 0.914 tokens=90029 (3628s)
+[it 9] child sr=0.763 score=0.721 A: 12/12, P: 10/17, Q: 12/12, S: 21/27, SN: 16/25 | best 0.914 tokens=101827 (3697s)
+  falsification round 3: incumbent failed 2/48 fresh scenarios; batch -> 95
+  checkpoint B100000: tokens=101827 best it=1 sr=0.895 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 17/27
+[it 10] child sr=0.526 score=0.473 A: 12/12, P: 8/17, Q: 12/12, S: 2/27, SN: 16/27 | best 0.895 tokens=113669 (4849s)
+[it 11] child sr=0.874 score=0.822 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 15/27 | best 0.895 tokens=125329 (4916s)
+[it 12] child sr=0.884 score=0.830 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/27 | best 0.895 tokens=136863 (5002s)
+  falsification round 4: incumbent failed 2/48 fresh scenarios; batch -> 97
+    tune: T_resid 5 -> 1.25 -> 0.959
+  tuned incumbent: 0.876 -> 0.959 (24 batch evals, CPU only)
+[it 13] child sr=0.866 score=0.838 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/29 | best 0.959 tokens=148509 (6058s)
+[it 14] child sr=0.866 score=0.838 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/29 | best 0.959 tokens=160437 (6118s)
+[it 15] child sr=0.990 score=0.923 A: 11/12, P: 17/17, Q: 12/12, S: 27/27, SN: 29/29 | best 0.990 tokens=171407 (6174s)
+  falsification round 5: incumbent failed 4/48 fresh scenarios; batch -> 101
+    tune: P_resid 75 -> 112.5 -> 0.950
+    tune: T_resid 1.25 -> 0.3125 -> 0.960
+  tuned incumbent: 0.950 -> 0.960 (24 batch evals, CPU only)
+[it 16] child sr=0.960 score=0.890 A: 12/14, P: 17/19, Q: 12/12, S: 27/27, SN: 29/29 | best 0.960 tokens=183850 (7093s)
+[it 17] child sr=0.960 score=0.891 A: 12/14, P: 17/19, Q: 12/12, S: 27/27, SN: 29/29 | best 0.960 tokens=196295 (7150s)
+[it 18] child sr=0.960 score=0.891 A: 12/14, P: 17/19, Q: 12/12, S: 27/27, SN: 29/29 | best 0.960 tokens=208903 (7212s)
+  falsification round 6: incumbent failed 4/48 fresh scenarios; batch -> 105
+    tune: moved rule block 2 ['PRESSURE_APPROACHING_TRIP'] to front -> 0.933
+  tuned incumbent: 0.924 -> 0.933 (24 batch evals, CPU only)
+  checkpoint B200000: tokens=208903 best it=17 sr=0.933 A: 12/16, P: 17/20, Q: 12/12, S: 28/28, SN: 29/29
+  checkpoint final: tokens=208903 best it=17 sr=0.933 A: 12/16, P: 17/20, Q: 12/12, S: 28/28, SN: 29/29
+DONE best it=17 sr=0.933 tokens=208903 calls=18

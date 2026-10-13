@@ -1,0 +1,198 @@
+{
+ "name": "E10000",
+ "method": "gp",
+ "evals": 9921,
+ "label_evals": 13,
+ "generation": 5,
+ "best_gen": 4,
+ "best_evals_at_birth": 7422,
+ "best_sr": 0.9,
+ "best_score": 0.8392000000000001,
+ "table": "A: 12/13, P: 16/16, Q: 12/12, S: 13/21, SN: 28/28",
+ "loc": 22,
+ "rules": [
+  "R1",
+  "R2",
+  "R3",
+  "R4"
+ ],
+ "n_rules": 4,
+ "genome": [
+  {
+   "atoms": [
+    [
+     "num",
+     "P_ttl",
+     ">",
+     275.98
+    ]
+   ],
+   "action": "arm_both"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "P_slope",
+     "<",
+     135.25
+    ]
+   ],
+   "action": "subst_P"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "n_saturated",
+     "<",
+     1.5
+    ]
+   ],
+   "action": "subst_T"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "dP_rs",
+     "<",
+     -161.51
+    ]
+   ],
+   "action": "reactor_level-10"
+  }
+ ],
+ "batch_size": 90,
+ "seed": 1,
+ "budget_evals": 20000,
+ "wall_s": 2789.6071112155914,
+ "ga": {
+  "pop_size": 24,
+  "elite": 2,
+  "tournament": 3,
+  "p_crossover": 0.7,
+  "p_mutation": 0.9,
+  "max_rules": 8,
+  "falsify": true,
+  "falsify_every": 1,
+  "falsify_n": 48,
+  "batch_cap": 140
+ },
+ "history": [
+  {
+   "gen": 0,
+   "evals": 1872,
+   "label_evals": 0,
+   "best_score": 0.8189743589743589,
+   "best_sr": 0.8589743589743589,
+   "mean_score": 0.4418028846153846,
+   "best_rules": 2,
+   "batch": 78,
+   "wall_s": 446.6
+  },
+  {
+   "gen": 1,
+   "evals": 3588,
+   "label_evals": 0,
+   "best_score": 0.9112179487179487,
+   "best_sr": 0.9487179487179487,
+   "mean_score": 0.564596688034188,
+   "best_rules": 2,
+   "batch": 78,
+   "wall_s": 881.5
+  },
+  {
+   "gen": 2,
+   "evals": 5362,
+   "label_evals": 2,
+   "best_score": 0.8875000000000001,
+   "best_sr": 0.925,
+   "mean_score": 0.6453819444444444,
+   "best_rules": 2,
+   "batch": 80,
+   "wall_s": 1729.6
+  },
+  {
+   "gen": 3,
+   "evals": 7305,
+   "label_evals": 5,
+   "best_score": 0.854066265060241,
+   "best_sr": 0.891566265060241,
+   "mean_score": 0.6793373493975904,
+   "best_rules": 2,
+   "batch": 83,
+   "wall_s": 2225.3
+  },
+  {
+   "gen": 4,
+   "evals": 9151,
+   "label_evals": 8,
+   "best_score": 0.8810271317829458,
+   "best_sr": 0.9418604651162791,
+   "mean_score": 0.687876291989664,
+   "best_rules": 4,
+   "batch": 86,
+   "wall_s": 2636.4
+  }
+ ],
+ "falsification": [
+  {
+   "round": 1,
+   "gen": 1,
+   "n_new": 2,
+   "n_fresh": 48,
+   "n_failing": 2,
+   "labels": [
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 3682,
+   "batch": 80
+  },
+  {
+   "round": 2,
+   "gen": 2,
+   "n_new": 3,
+   "n_fresh": 48,
+   "n_failing": 3,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 5479,
+   "batch": 83
+  },
+  {
+   "round": 3,
+   "gen": 3,
+   "n_new": 3,
+   "n_fresh": 48,
+   "n_failing": 3,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 7422,
+   "batch": 86
+  },
+  {
+   "round": 4,
+   "gen": 4,
+   "n_new": 4,
+   "n_fresh": 48,
+   "n_failing": 5,
+   "labels": [
+    "rescuable",
+    "unrescuable",
+    "benign",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 9291,
+   "batch": 90
+  }
+ ]
+}

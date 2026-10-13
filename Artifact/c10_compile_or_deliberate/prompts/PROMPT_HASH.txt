@@ -1,0 +1,1 @@
+75ea6b0352e43542  sha256(PART_A + PART_B)[:16]

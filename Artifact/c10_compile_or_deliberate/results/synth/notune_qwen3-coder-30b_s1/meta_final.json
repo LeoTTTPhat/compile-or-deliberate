@@ -1,0 +1,178 @@
+{
+ "name": "final",
+ "tokens": 210448,
+ "calls": 16,
+ "best_it": 16,
+ "best_sr": 0.4028776978417266,
+ "best_score": 0.3388776978417266,
+ "table": "A: 12/12, P: 8/37, Q: 12/12, S: 5/53, SN: 19/25",
+ "loc": 54,
+ "rules": [
+  "COOLING_WATER_VALVE_STUCK",
+  "FEED_COMPOSITION_UPSET",
+  "FEED_COMPOSITION_UPSET_PRESSURE",
+  "FEED_LOSS",
+  "FEED_LOSS_PRESSURE",
+  "GRADE_DEV",
+  "NO_ACTION",
+  "PREEMPTIVE_LEVEL_ADJUST",
+  "PREEMPTIVE_PRESSURE_REDUCTION",
+  "PREEMPTIVE_SEPARATOR_ADJUST",
+  "PREEMPTIVE_TEMP_REDUCTION",
+  "PRESSURE_APPROACHING_TRIP",
+  "PRESSURE_HI",
+  "PRESSURE_HIHI",
+  "PRESSURE_RISING_COMPOSITION",
+  "PRESSURE_SENSOR_FAULT",
+  "RATE_DEV",
+  "RLEVEL_HI",
+  "RLEVEL_LO",
+  "SLEVEL_HI",
+  "SLEVEL_LO",
+  "TEMPERATURE_DRIFT",
+  "TEMP_HI",
+  "TEMP_HIHI",
+  "TEMP_SENSOR_FAULT",
+  "TRIP_VIOLATION"
+ ],
+ "batch_size": 139,
+ "model": "qwen3-coder:30b",
+ "prompt_hash": "75ea6b0352e43542",
+ "history": [
+  {
+   "it": 0,
+   "ptok": 3548,
+   "ctok": 1452,
+   "cached": true,
+   "latency": 297.32283091545105,
+   "tokens_cum": 5000
+  },
+  {
+   "it": 2,
+   "ptok": 10869,
+   "ctok": 1829,
+   "cached": true,
+   "latency": 215.92608308792114,
+   "tokens_cum": 17698
+  },
+  {
+   "it": 3,
+   "ptok": 10869,
+   "ctok": 1787,
+   "cached": true,
+   "latency": 260.24394178390503,
+   "tokens_cum": 30354
+  },
+  {
+   "it": 4,
+   "ptok": 10870,
+   "ctok": 1880,
+   "cached": true,
+   "latency": 590.9033336639404,
+   "tokens_cum": 43104
+  },
+  {
+   "it": 5,
+   "ptok": 11192,
+   "ctok": 1787,
+   "cached": true,
+   "latency": 418.1100459098816,
+   "tokens_cum": 56083
+  },
+  {
+   "it": 6,
+   "ptok": 11192,
+   "ctok": 2031,
+   "cached": true,
+   "latency": 394.89222717285156,
+   "tokens_cum": 69306
+  },
+  {
+   "it": 7,
+   "ptok": 11468,
+   "ctok": 2306,
+   "cached": false,
+   "latency": 59.699182987213135,
+   "tokens_cum": 83080
+  },
+  {
+   "it": 8,
+   "ptok": 11743,
+   "ctok": 2875,
+   "cached": false,
+   "latency": 76.11802577972412,
+   "tokens_cum": 97698
+  },
+  {
+   "it": 9,
+   "ptok": 11468,
+   "ctok": 2389,
+   "cached": false,
+   "latency": 50.02677083015442,
+   "tokens_cum": 111555
+  },
+  {
+   "it": 10,
+   "ptok": 11468,
+   "ctok": 2351,
+   "cached": false,
+   "latency": 41.52449297904968,
+   "tokens_cum": 125374
+  },
+  {
+   "it": 11,
+   "ptok": 11826,
+   "ctok": 2628,
+   "cached": false,
+   "latency": 47.42895293235779,
+   "tokens_cum": 139828
+  },
+  {
+   "it": 12,
+   "ptok": 11743,
+   "ctok": 2306,
+   "cached": false,
+   "latency": 42.778847217559814,
+   "tokens_cum": 153877
+  },
+  {
+   "it": 13,
+   "ptok": 11826,
+   "ctok": 2500,
+   "cached": false,
+   "latency": 117.33941769599915,
+   "tokens_cum": 168203
+  },
+  {
+   "it": 14,
+   "ptok": 11743,
+   "ctok": 2834,
+   "cached": false,
+   "latency": 97.62523913383484,
+   "tokens_cum": 182780
+  },
+  {
+   "it": 15,
+   "ptok": 11468,
+   "ctok": 2155,
+   "cached": false,
+   "latency": 122.30537700653076,
+   "tokens_cum": 196403
+  },
+  {
+   "it": 16,
+   "ptok": 11468,
+   "ctok": 2577,
+   "cached": false,
+   "latency": 145.3931007385254,
+   "tokens_cum": 210448
+  }
+ ],
+ "falsify": true,
+ "minimize": true,
+ "remedy": true,
+ "seed": 1,
+ "lint_fixes": 0,
+ "episodes": 3670,
+ "tune_budget": 0
+}

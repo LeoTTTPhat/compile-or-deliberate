@@ -1,0 +1,70 @@
+{
+ "reactor_pressure": {
+  "inputs": [
+   "separator_pressure",
+   "stripper_pressure",
+   "compressor_work",
+   "recycle_flow"
+  ],
+  "coef": [
+   0.8746516427945514,
+   0.1265126427070896,
+   0.06844506272670968,
+   -0.5830513999392569
+  ],
+  "intercept": 1.4979555385997347,
+  "test_rmse": 2.9164275299787343,
+  "test_r2": 0.994584947592346,
+  "n_train": 41029,
+  "n_test": 13860
+ },
+ "reactor_temperature": {
+  "inputs": [
+   "reactor_cooling_water_outlet_temperature_meas",
+   "mvf:reactor_cooling_water_valve"
+  ],
+  "coef": [
+   0.8046095215152257,
+   0.3237747426552522
+  ],
+  "intercept": 30.90746248360345,
+  "test_rmse": 0.8989861188902761,
+  "test_r2": 0.40607621950833805,
+  "n_train": 41029,
+  "n_test": 13860
+ },
+ "separator_temperature": {
+  "inputs": [
+   "condenser_cooling_water_outlet_temperature",
+   "reactor_temperature",
+   "separator_pressure"
+  ],
+  "coef": [
+   0.8781950338608353,
+   1.0067063943288754,
+   -0.025201141009820318
+  ],
+  "intercept": -42.56660284436822,
+  "test_rmse": 1.3116551267264573,
+  "test_r2": 0.9441788582858167,
+  "n_train": 41029,
+  "n_test": 13860
+ },
+ "stripper_pressure": {
+  "inputs": [
+   "separator_pressure",
+   "reactor_pressure",
+   "compressor_work"
+  ],
+  "coef": [
+   0.2103516370734514,
+   0.8797660180654563,
+   0.0677695190606005
+  ],
+  "intercept": 144.47993055896512,
+  "test_rmse": 5.356129718362587,
+  "test_r2": 0.984657851906155,
+  "n_train": 41029,
+  "n_test": 13860
+ }
+}

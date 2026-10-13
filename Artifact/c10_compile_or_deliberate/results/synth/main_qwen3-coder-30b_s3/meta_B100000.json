@@ -1,0 +1,117 @@
+{
+ "name": "B100000",
+ "tokens": 104697,
+ "calls": 8,
+ "best_it": 6,
+ "best_sr": 0.7727272727272727,
+ "best_score": 0.7111272727272727,
+ "table": "A: 12/12, P: 16/17, Q: 12/12, S: 14/20, SN: 14/27",
+ "loc": 60,
+ "rules": [
+  "feed_composition_upset",
+  "feed_ratio_change",
+  "grade_deviation",
+  "pressure_drift",
+  "pressure_frozen",
+  "pressure_high",
+  "pressure_hihi",
+  "pressure_low",
+  "pressure_sensor_fault",
+  "pressure_trending_hihi",
+  "pressure_trending_low",
+  "rate_deviation",
+  "reactor_level_hi",
+  "reactor_level_lo",
+  "separator_level_hi",
+  "separator_level_lo",
+  "separator_temp_sensor_fault",
+  "stripper_level_hi",
+  "stripper_level_lo",
+  "stripper_pressure_sensor_fault",
+  "temp_hihi",
+  "temp_trending_high",
+  "temp_trending_hihi",
+  "temperature_drift",
+  "temperature_frozen",
+  "temperature_high",
+  "temperature_low",
+  "temperature_sensor_fault",
+  "trip_violation"
+ ],
+ "batch_size": 88,
+ "model": "qwen3-coder:30b",
+ "prompt_hash": "75ea6b0352e43542",
+ "history": [
+  {
+   "it": 0,
+   "ptok": 3548,
+   "ctok": 1776,
+   "cached": true,
+   "latency": 385.5534770488739,
+   "tokens_cum": 5324
+  },
+  {
+   "it": 2,
+   "ptok": 10710,
+   "ctok": 2335,
+   "cached": true,
+   "latency": 252.7960340976715,
+   "tokens_cum": 18369
+  },
+  {
+   "it": 3,
+   "ptok": 11108,
+   "ctok": 2868,
+   "cached": true,
+   "latency": 312.05331921577454,
+   "tokens_cum": 32345
+  },
+  {
+   "it": 4,
+   "ptok": 11108,
+   "ctok": 2662,
+   "cached": false,
+   "latency": 406.8185341358185,
+   "tokens_cum": 46115
+  },
+  {
+   "it": 5,
+   "ptok": 11108,
+   "ctok": 2388,
+   "cached": false,
+   "latency": 368.8585059642792,
+   "tokens_cum": 59611
+  },
+  {
+   "it": 6,
+   "ptok": 11161,
+   "ctok": 2912,
+   "cached": false,
+   "latency": 374.5409982204437,
+   "tokens_cum": 73684
+  },
+  {
+   "it": 7,
+   "ptok": 11260,
+   "ctok": 3169,
+   "cached": false,
+   "latency": 161.6343379020691,
+   "tokens_cum": 88113
+  },
+  {
+   "it": 507,
+   "ptok": 13409,
+   "ctok": 3175,
+   "cached": false,
+   "latency": 92.7381238937378,
+   "tokens_cum": 104697
+  }
+ ],
+ "falsify": true,
+ "minimize": true,
+ "remedy": true,
+ "seed": 3,
+ "lint_fixes": 1,
+ "episodes": 5314,
+ "tune_budget": 24
+}

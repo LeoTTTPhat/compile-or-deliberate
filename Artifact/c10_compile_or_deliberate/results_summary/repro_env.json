@@ -1,0 +1,64 @@
+{
+ "collected": "2026-10-11",
+ "cpu": "Apple M3 Ultra",
+ "cpu_cores": 32,
+ "gpu_cores": "80",
+ "memory_gb": 512,
+ "models": {
+  "qwen2.5-coder:7b": {
+   "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+   "family": "qwen2",
+   "format": "gguf",
+   "parameter_size": "7.6B",
+   "quantization_level": "Q4_K_M",
+   "size_bytes": 4683087561
+  },
+  "qwen2.5:14b-instruct-q4_K_M": {
+   "digest": "7cdf5a0187d5c58cc5d369b255592f7841d1c4696d45a8c8a9489440385b22f6",
+   "family": "qwen2",
+   "format": "gguf",
+   "parameter_size": "14.8B",
+   "quantization_level": "Q4_K_M",
+   "size_bytes": 8988124069
+  },
+  "qwen2.5:7b": {
+   "digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+   "family": "qwen2",
+   "format": "gguf",
+   "parameter_size": "7.6B",
+   "quantization_level": "Q4_K_M",
+   "size_bytes": 4683087332
+  },
+  "qwen3-coder:30b": {
+   "digest": "06c1097efce0431c2045fe7b2e5108366e43bee1b4603a7aded8f21689e90bca",
+   "family": "qwen3moe",
+   "format": "gguf",
+   "parameter_size": "30.5B",
+   "quantization_level": "Q4_K_M",
+   "size_bytes": 18556700761
+  }
+ },
+ "ollama": {
+  "source": "live /api/version, /api/tags on 2026-10-10",
+  "version": "0.33.3"
+ },
+ "os": "macOS 26.5.2",
+ "packages": {
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "psutil": "7.2.2",
+  "requests": "2.34.2",
+  "scikit-learn": "1.9.1",
+  "scipy": "1.18.1",
+  "statsmodels": "0.15.0",
+  "tep-studio": "0.2.0"
+ },
+ "python": "3.12.12",
+ "roles": {
+  "qwen2.5-coder:7b": "offline coder",
+  "qwen2.5:14b-instruct-q4_K_M": "online deliberator",
+  "qwen2.5:7b": "pilot runs only: hybrid escalation, online deliberator",
+  "qwen3-coder:30b": "hybrid escalation, offline coder, online deliberator"
+ }
+}

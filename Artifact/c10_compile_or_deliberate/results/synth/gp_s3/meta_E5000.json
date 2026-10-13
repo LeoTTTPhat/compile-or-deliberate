@@ -1,0 +1,160 @@
+{
+ "name": "E5000",
+ "method": "gp",
+ "evals": 4996,
+ "label_evals": 5,
+ "generation": 2,
+ "best_gen": 1,
+ "best_evals_at_birth": 1872,
+ "best_sr": 0.8433734939759037,
+ "best_score": 0.7650401606425703,
+ "table": "A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 12/25",
+ "loc": 30,
+ "rules": [
+  "R1",
+  "R2",
+  "R3",
+  "R4",
+  "R5",
+  "R6"
+ ],
+ "n_rules": 6,
+ "genome": [
+  {
+   "atoms": [
+    [
+     "num",
+     "SL_avg",
+     "<",
+     49.449
+    ]
+   ],
+   "action": "rate_cut_25"
+  },
+  {
+   "atoms": [
+    [
+     "state",
+     "armed_overrides",
+     "not",
+     0.0
+    ]
+   ],
+   "action": "min_stable_park"
+  },
+  {
+   "atoms": [
+    [
+     "alarm",
+     "XLEVEL_HI",
+     "",
+     0.0
+    ]
+   ],
+   "action": "subst_P"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "T_slope",
+     ">",
+     -0.017028
+    ]
+   ],
+   "action": "arm_both"
+  },
+  {
+   "atoms": [
+    [
+     "alarm",
+     "TEMP_HIHI",
+     "not",
+     0.0
+    ],
+    [
+     "num",
+     "T_avg",
+     ">",
+     120.36
+    ]
+   ],
+   "action": "reactor_pressure-50"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "XL_slope",
+     ">",
+     1.3255
+    ],
+    [
+     "num",
+     "n_alarms",
+     "<",
+     3.5
+    ]
+   ],
+   "action": "arm_composition"
+  }
+ ],
+ "batch_size": 83,
+ "seed": 3,
+ "budget_evals": 20000,
+ "wall_s": 951.3547761440277,
+ "ga": {
+  "pop_size": 24,
+  "elite": 2,
+  "tournament": 3,
+  "p_crossover": 0.7,
+  "p_mutation": 0.9,
+  "max_rules": 8,
+  "falsify": true,
+  "falsify_every": 1,
+  "falsify_n": 48,
+  "batch_cap": 140
+ },
+ "history": [
+  {
+   "gen": 0,
+   "evals": 1872,
+   "label_evals": 0,
+   "best_score": 0.7876923076923077,
+   "best_sr": 0.8076923076923077,
+   "mean_score": 0.46216079059829057,
+   "best_rules": 1,
+   "batch": 78,
+   "wall_s": 296.7
+  },
+  {
+   "gen": 1,
+   "evals": 3588,
+   "label_evals": 0,
+   "best_score": 0.8191025641025641,
+   "best_sr": 0.8974358974358975,
+   "mean_score": 0.5806517094017094,
+   "best_rules": 6,
+   "batch": 78,
+   "wall_s": 618.9
+  }
+ ],
+ "falsification": [
+  {
+   "round": 1,
+   "gen": 1,
+   "n_new": 5,
+   "n_fresh": 48,
+   "n_failing": 5,
+   "labels": [
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable",
+    "rescuable"
+   ],
+   "evals": 3751,
+   "batch": 83
+  }
+ ]
+}

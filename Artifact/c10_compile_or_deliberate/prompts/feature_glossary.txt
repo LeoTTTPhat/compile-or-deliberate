@@ -1,0 +1,25 @@
+FEATURES available in the dict `f` (all measured/derived signals; floats unless noted):
+- f["t"] time (h); f["trigger"] str in {"new_alarm","alarm_hold","heartbeat","revision"}.
+- For each key K in P (reactor pressure kPa), T (reactor temperature C), RL, SL, XL (reactor/separator/stripper
+  level %), G (product %G mol%), PROD (production m3/h), SP (separator pressure), XP (stripper pressure),
+  ST (separator temp), XT (stripper temp), PURGE, FA, FD, FE, FAC (feed flows A, D, E, A+C), RECY (recycle),
+  RFEED (reactor feed), CW_R / CW_C (reactor / condenser cooling-water outlet temperature), WORK (compressor work),
+  XA / XC (reactor-feed A / C mol%):
+    f[K] latest value, f[K+"_avg"] 15-min mean, f[K+"_slope"] slope per hour over the last hour, f[K+"_slope_se"]
+    its standard error, f[K+"_dev_nom"] deviation of the 15-min mean from the nominal operating point.
+  For regulated K in P, T, RL, SL, XL, G, PROD also f[K+"_sp"] current setpoint and f[K+"_err"] mean minus setpoint.
+- For K in P, T, RL, SL, XL: f[K+"_margin"] margin to the trip limit (same units) and f[K+"_ttl"] projected
+  time-to-limit in hours (float('inf') if not approaching).
+- f["yA"], f["yAC"] reactor-feed A and A+C composition; f["yA_sp"], f["yAC_sp"]; f["yA_dev_nom"].
+- Valves (0-100 %): f["mv_d_feed"], f["mv_e_feed"], f["mv_a_feed"], f["mv_ac_feed"], f["mv_compressor_recycle"],
+  f["mv_purge"], f["mv_s_underflow"], f["mv_x_underflow"], f["mv_x_steam"], f["mv_r_cooling_water"],
+  f["mv_s_cooling_water"], f["mv_r_agitator_speed"]; each also with suffix "_std" (1-h standard deviation; a
+  value near 0 means the valve is not moving). f["saturated"] list of saturated valve names; f["n_saturated"].
+- Consistency residuals: f["dP_rs"] reactor-minus-separator pressure difference minus its nominal (kPa);
+  f["P_resid"] reactor pressure reading minus its soft-sensor estimate (kPa); f["T_resid"] reactor temperature
+  reading minus its soft-sensor estimate (C); f["P_soft"], f["T_soft"] the estimates.
+- Alarms: f["alarms"] sorted list of active alarm names; f["alarm_ages"] dict name -> hours active;
+  f["A_<NAME>"] bool per alarm; f["n_alarms"].
+- State: f["armed_composition"], f["armed_overrides"] bools; f["substituted"] list of instruments out of service;
+  f["cmd_pct_g"], f["cmd_production"] operator targets; f["G_cmd_err"], f["PROD_cmd_err"] delivered minus target.
+- During a revision call: f["rejected"] the rejected action dict and f["reasons"] list of rejection reasons.

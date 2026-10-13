@@ -1,0 +1,51 @@
+{
+ "name": "v0",
+ "tokens": 5324,
+ "calls": 1,
+ "best_it": 1,
+ "best_sr": 0.7692307692307693,
+ "best_score": 0.7308974358974359,
+ "table": "A: 12/12, P: 16/16, Q: 12/12, S: 14/18, SN: 6/20",
+ "loc": 40,
+ "rules": [
+  "grade_deviation",
+  "pressure_high",
+  "pressure_hihi",
+  "pressure_low",
+  "pressure_sensor_fault",
+  "rate_deviation",
+  "reactor_level_hi",
+  "reactor_level_lo",
+  "separator_level_hi",
+  "separator_level_lo",
+  "separator_temp_sensor_fault",
+  "stripper_level_hi",
+  "stripper_level_lo",
+  "stripper_pressure_sensor_fault",
+  "temp_hihi",
+  "temperature_high",
+  "temperature_low",
+  "temperature_sensor_fault",
+  "trip_violation"
+ ],
+ "batch_size": 78,
+ "model": "qwen3-coder:30b",
+ "prompt_hash": "75ea6b0352e43542",
+ "history": [
+  {
+   "it": 0,
+   "ptok": 3548,
+   "ctok": 1776,
+   "cached": true,
+   "latency": 385.5534770488739,
+   "tokens_cum": 5324
+  }
+ ],
+ "falsify": true,
+ "minimize": true,
+ "remedy": true,
+ "seed": 3,
+ "lint_fixes": 0,
+ "episodes": 78,
+ "tune_budget": 24
+}

@@ -1,0 +1,32 @@
+PLANT: Tennessee Eastman process (revised model), mode 1. Gaseous reactants A, C, D, E (+ inert B) react in a
+cooled two-phase reactor to liquid products G and H (byproduct F). Reactor effluent is cooled in a condenser,
+flashed in a vapour-liquid separator; vapour is recycled by a compressor (with a purge for inerts), liquid
+goes to a stripper whose underflow is the product. Nominal: reactor pressure 2705 kPa, reactor temperature
+120.4 C, reactor level 75 %, separator level 50 %, stripper level 50 %, product %G 53.7 mol%, production
+22.95 m3/h. HARD TRIP LIMITS (true values): reactor pressure 3000 kPa; reactor temperature 175 C; reactor,
+separator and stripper levels outside their 0-100 % indicated ranges.
+REGULATORY LAYER (Ricker decentralized PI): feed flows ratio-controlled to a production index; reactor pressure
+-> purge; reactor level -> separator temperature setpoint (condenser cooling); reactor temperature -> reactor
+cooling-water valve; separator level -> separator underflow; stripper level -> product valve. Two pre-engineered
+components are AVAILABLE BUT DISARMED: composition_control (yA/yAC reactant-composition trims plus %G
+feedforward/feedback; restores reactant balance and tracks product grade) and safety_overrides (high-pressure
+override that sheds production as pressure approaches its limit; high-level override on the recycle valve).
+ALARMS (on measured values): PRESSURE_HI: reactor_pressure > 2760 (priority 2); PRESSURE_HIHI: reactor_pressure > 2900 (priority 1); PRESSURE_LO: reactor_pressure < 2550 (priority 3); TEMP_HI: reactor_temperature > 127 (priority 2); TEMP_HIHI: reactor_temperature > 140 (priority 1); TEMP_LO: reactor_temperature < 114 (priority 3); RLEVEL_HI: reactor_level > 92 (priority 2); RLEVEL_LO: reactor_level < 45 (priority 2); SLEVEL_HI: separator_level > 85 (priority 2); SLEVEL_LO: separator_level < 15 (priority 2); XLEVEL_HI: stripper_level > 85 (priority 2); XLEVEL_LO: stripper_level < 15 (priority 2); GRADE_DEV: |stripper_underflow_G_concentration - setpoint pct_g| > 3 for 0.5 h; RATE_DEV: |stripper_underflow - setpoint production_rate| > 2 for 1 h.
+SUPERVISORY ACTIONS (exactly one per decision, JSON):
+- {"type": "adjust_setpoints", "changes": {field: absolute_target}} with reactor_pressure in [2500, 2895], max move 100, cooldown 0.5 h; reactor_temperature in [115, 128], max move 3, cooldown 0.5 h; reactor_level in [50, 85], max move 10, cooldown 0.5 h; separator_level in [30, 70], max move 10, cooldown 0.5 h; stripper_level in [30, 70], max move 10, cooldown 0.5 h; production_rate in [11, 26], max move 4, cooldown 1 h; pct_g in [40, 65], max move 5, cooldown 2 h; ya in [50, 60], max move 2, cooldown 1 h; yac in [54, 62], max move 2, cooldown 1 h.
+- {"type": "reconfigure", "components": [...]} components: composition_control, safety_overrides (one-way arm).
+- {"type": "procedure", "name": ...} pre-audited: depressurize_step, min_stable_park, rate_cut_25, rate_cut_50 (rate_cut_25/50 cut the production
+  target by 25/50 %; depressurize_step lowers the pressure setpoint by 75 kPa; min_stable_park halves production
+  then settles pressure at 2600 kPa).
+- {"type": "substitute_instrument", "measurement": m, "method": "soft"} for m in ['reactor_pressure', 'reactor_temperature', 'separator_temperature', 'stripper_pressure']: the loop
+  uses the pre-engineered soft sensor instead of the transmitter (pressure: from separator/stripper pressure,
+  compressor work, recycle flow; temperature: from cooling-water outlet temperature and filtered valve position).
+- {"type": "no_action"};  {"type": "shutdown"} (orderly shutdown = failure; last resort).
+Actions land 0.05 h after the decision; at most 12 actions per episode; every action passes a static
+validator and a 6-h forward simulation on a nominal model (blind to faults) that vetoes actions predicted to
+make things worse than holding.
+ANTICIPATED ABNORMAL SITUATIONS (HAZOP catalogue; causes, not parameters): reactant-composition upsets in the
+A/C feed (stream 4) and C-header pressure loss; loss or restriction of the A feed, especially at elevated
+production; product-grade (%G) changes ordered by operations; reactor pressure or temperature transmitter
+failures (bias, drift, frozen reading); changes of production target.
+DIAGNOSIS VOCABULARY: none, feed_composition_upset, feed_loss_or_header_pressure, reactor_cooling_fault, condenser_cooling_fault, kinetics_drift, heat_transfer_degradation, valve_stiction_or_stuck, sensor_fault, operating_point_change, compound_fault, unknown.

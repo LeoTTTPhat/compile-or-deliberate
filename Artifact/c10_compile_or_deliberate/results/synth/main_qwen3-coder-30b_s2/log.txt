@@ -1,0 +1,51 @@
+training batch: 78 scenarios; model qwen3-coder:30b; seed 2; budget 400000
+[it 1] v0 sr=0.359 score=0.340 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 10/20 tokens=5008 (42s)
+  checkpoint v0: tokens=5008 best it=1 sr=0.359 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 10/20
+[it 2] child sr=0.436 score=0.412 A: 12/12, P: 6/16, Q: 0/12, S: 3/18, SN: 13/20 | best 0.436 tokens=17325 (97s)
+[it 3] child sr=0.359 score=0.335 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 10/20 | best 0.436 tokens=29433 (138s)
+  falsification round 1: incumbent failed 11/48 fresh scenarios; batch -> 89
+    tune: moved rule block 10 ['FEED_COMPOSITION_UPSET'] to front -> 0.472
+  tuned incumbent: 0.382 -> 0.472 (24 batch evals, CPU only)
+  checkpoint B25000: tokens=29433 best it=2 sr=0.472 A: 12/12, P: 6/20, Q: 0/12, S: 11/25, SN: 13/20
+[it 4] child sr=0.371 score=0.347 A: 12/12, P: 6/20, Q: 0/12, S: 3/25, SN: 12/20 | best 0.472 tokens=42529 (2764s)
+[it 5] child sr=0.382 score=0.358 A: 12/12, P: 6/20, Q: 0/12, S: 3/25, SN: 13/20 | best 0.472 tokens=55401 (3094s)
+  checkpoint B50000: tokens=55401 best it=2 sr=0.472 A: 12/12, P: 6/20, Q: 0/12, S: 11/25, SN: 13/20
+[it 6] child sr=0.528 score=0.488 A: 12/12, P: 6/20, Q: 0/12, S: 17/25, SN: 12/20 | best 0.528 tokens=68610 (3499s)
+  falsification round 2: incumbent failed 14/48 fresh scenarios; batch -> 103
+[it 7] child sr=0.379 score=0.353 A: 12/12, P: 6/28, Q: 0/12, S: 4/29, SN: 17/22 | best 0.456 tokens=82097 (4626s)
+[it 8] child sr=0.456 score=0.415 A: 12/12, P: 6/28, Q: 0/12, S: 17/29, SN: 12/22 | best 0.456 tokens=96643 (4753s)
+[it 9] child sr=0.456 score=0.416 A: 12/12, P: 6/28, Q: 0/12, S: 17/29, SN: 12/22 | best 0.456 tokens=110975 (4943s)
+  falsification round 3: incumbent failed 14/48 fresh scenarios; batch -> 117
+  checkpoint B100000: tokens=110975 best it=6 sr=0.402 A: 12/12, P: 6/32, Q: 0/12, S: 17/35, SN: 12/26
+[it 10] child sr=0.402 score=0.362 A: 12/12, P: 6/32, Q: 0/12, S: 17/35, SN: 12/26 | best 0.402 tokens=125373 (6102s)
+[it 11] child sr=0.402 score=0.362 A: 12/12, P: 6/32, Q: 0/12, S: 17/35, SN: 12/26 | best 0.402 tokens=140913 (6306s)
+[it 12] child sr=0.402 score=0.362 A: 12/12, P: 6/32, Q: 0/12, S: 17/35, SN: 12/26 | best 0.402 tokens=190579 (7185s)
+  falsification round 4: incumbent failed 12/48 fresh scenarios; batch -> 129
+    tune: moved rule block 9 ['FEED_COMPOSITION_UPSET'] to front -> 0.364
+  tuned incumbent: 0.364 -> 0.364 (24 batch evals, CPU only)
+[it 13] child sr=0.364 score=0.324 A: 12/12, P: 6/39, Q: 0/12, S: 17/37, SN: 12/29 | best 0.364 tokens=204866 (8735s)
+  checkpoint B200000: tokens=204866 best it=6 sr=0.364 A: 12/12, P: 6/39, Q: 0/12, S: 17/37, SN: 12/29
+[it 14] child sr=0.364 score=0.324 A: 12/12, P: 6/39, Q: 0/12, S: 17/37, SN: 12/29 | best 0.364 tokens=218712 (9171s)
+[it 15] child sr=0.364 score=0.324 A: 12/12, P: 6/39, Q: 0/12, S: 17/37, SN: 12/29 | best 0.364 tokens=232508 (9485s)
+  falsification round 5: incumbent failed 15/48 fresh scenarios; batch -> 140
+    tune: yA_dev_nom -5 -> -20 -> 0.350
+  tuned incumbent: 0.336 -> 0.350 (24 batch evals, CPU only)
+[it 16] child sr=0.350 score=0.309 A: 8/8, P: 6/43, Q: 0/12, S: 23/45, SN: 12/32 | best 0.350 tokens=246737 (11177s)
+[it 17] child sr=0.350 score=0.309 A: 8/8, P: 6/43, Q: 0/12, S: 23/45, SN: 12/32 | best 0.350 tokens=260955 (11282s)
+[it 18] child sr=0.350 score=0.294 A: 8/8, P: 6/43, Q: 0/12, S: 23/45, SN: 12/32 | best 0.350 tokens=275089 (11465s)
+  falsification round 6: incumbent failed 11/48 fresh scenarios; batch -> 140
+[it 19] child sr=0.271 score=0.230 P: 6/48, Q: 0/12, S: 20/45, SN: 12/35 | best 0.271 tokens=289104 (12925s)
+[it 20] child sr=0.271 score=0.230 P: 6/48, Q: 0/12, S: 20/45, SN: 12/35 | best 0.271 tokens=318964 (13063s)
+[it 21] child sr=0.271 score=0.230 P: 6/48, Q: 0/12, S: 20/45, SN: 12/35 | best 0.271 tokens=333014 (13204s)
+  falsification round 7: incumbent failed 11/48 fresh scenarios; batch -> 140
+[it 22] child sr=0.214 score=0.168 P: 6/51, Q: 0/12, S: 12/38, SN: 12/39 | best 0.229 tokens=347150 (14431s)
+[it 23] child sr=0.229 score=0.187 P: 6/51, Q: 0/12, S: 14/38, SN: 12/39 | best 0.229 tokens=361414 (14544s)
+[it 24] child sr=0.214 score=0.168 P: 6/51, Q: 0/12, S: 12/38, SN: 12/39 | best 0.229 tokens=375550 (14653s)
+  falsification round 8: incumbent failed 17/48 fresh scenarios; batch -> 140
+    tune: P_slope 0.1 -> 0.2 -> 0.193
+  tuned incumbent: 0.186 -> 0.193 (24 batch evals, CPU only)
+[it 25] child sr=0.193 score=0.155 P: 3/44, Q: 0/12, S: 11/40, SN: 13/44 | best 0.193 tokens=390033 (15663s)
+[it 26] child sr=0.193 score=0.155 P: 3/44, Q: 0/12, S: 11/40, SN: 13/44 | best 0.193 tokens=404186 (15757s)
+  checkpoint B400000: tokens=404186 best it=15 sr=0.193 P: 3/44, Q: 0/12, S: 11/40, SN: 13/44
+  checkpoint final: tokens=404186 best it=15 sr=0.193 P: 3/44, Q: 0/12, S: 11/40, SN: 13/44
+DONE best it=15 sr=0.193 tokens=404186 calls=29

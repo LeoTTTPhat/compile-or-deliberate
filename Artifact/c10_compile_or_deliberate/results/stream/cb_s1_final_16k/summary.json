@@ -1,0 +1,176 @@
+{
+ "log": [
+  {
+   "block": 0,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2535.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": true,
+   "train_sr": 0.9871794871794872,
+   "base_train": 0.9871794871794872,
+   "loc": 50,
+   "cases": 3
+  },
+  {
+   "block": 1,
+   "key": [
+    "sensor_fault",
+    "{\"measurement\": \"reactor_pressure\", \"method\": \"soft\", \"type\": \"substitute_instrument\"}"
+   ],
+   "admitted": true,
+   "train_sr": 0.9871794871794872,
+   "base_train": 0.9871794871794872,
+   "loc": 56,
+   "cases": 5
+  },
+  {
+   "block": 2,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2500.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": true,
+   "train_sr": 0.9871794871794872,
+   "base_train": 0.9871794871794872,
+   "loc": 62,
+   "cases": 8
+  },
+  {
+   "block": 3,
+   "key": [
+    "sensor_fault",
+    "{\"measurement\": \"reactor_temperature\", \"method\": \"soft\", \"type\": \"substitute_instrument\"}"
+   ],
+   "admitted": true,
+   "train_sr": 0.9871794871794872,
+   "base_train": 0.9871794871794872,
+   "loc": 67,
+   "cases": 10
+  },
+  {
+   "block": 4,
+   "key": [
+    "feed_composition_upset",
+    "{\"components\": [\"composition_control\"], \"type\": \"reconfigure\"}"
+   ],
+   "admitted": true,
+   "train_sr": 0.9871794871794872,
+   "base_train": 0.9871794871794872,
+   "loc": 73,
+   "cases": 6
+  },
+  {
+   "block": 5,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2665.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": true,
+   "train_sr": 0.9871794871794872,
+   "base_train": 0.9871794871794872,
+   "loc": 79,
+   "cases": 5
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2685.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "reactor_cooling_fault",
+    "{\"changes\": {\"reactor_temperature\": 119.4}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2645.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2625.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"components\": [\"safety_overrides\"], \"type\": \"reconfigure\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2650.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2605.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "reactor_cooling_fault",
+    "{\"changes\": {\"reactor_temperature\": 118.4}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2589.9999999536208}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 6,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2515.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  },
+  {
+   "block": 8,
+   "key": [
+    "feed_composition_upset",
+    "{\"changes\": {\"reactor_pressure\": 2585.0}, \"type\": \"adjust_setpoints\"}"
+   ],
+   "admitted": false,
+   "reason": "syntax error: invalid syntax (<unknown>, line 1)"
+  }
+ ],
+ "final_version": 6
+}

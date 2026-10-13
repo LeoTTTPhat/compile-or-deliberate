@@ -1,0 +1,67 @@
+{
+ "name": "B25000",
+ "tokens": 30354,
+ "calls": 3,
+ "best_it": 3,
+ "best_sr": 0.9888888888888889,
+ "best_score": 0.920088888888889,
+ "table": "A: 12/12, P: 20/20, Q: 12/12, S: 25/25, SN: 20/21",
+ "loc": 38,
+ "rules": [
+  "COOLING_WATER_VALVE_STUCK",
+  "FEED_COMPOSITION_UPSET",
+  "FEED_LOSS",
+  "GRADE_DEV",
+  "NO_ACTION",
+  "PRESSURE_APPROACHING_TRIP",
+  "PRESSURE_HI",
+  "PRESSURE_HIHI",
+  "PRESSURE_SENSOR_FAULT",
+  "RATE_DEV",
+  "RLEVEL_HI",
+  "RLEVEL_LO",
+  "SLEVEL_HI",
+  "SLEVEL_LO",
+  "TEMPERATURE_DRIFT",
+  "TEMP_HI",
+  "TEMP_HIHI",
+  "TEMP_SENSOR_FAULT",
+  "TRIP_VIOLATION"
+ ],
+ "batch_size": 90,
+ "model": "qwen3-coder:30b",
+ "prompt_hash": "75ea6b0352e43542",
+ "history": [
+  {
+   "it": 0,
+   "ptok": 3548,
+   "ctok": 1452,
+   "cached": true,
+   "latency": 297.32283091545105,
+   "tokens_cum": 5000
+  },
+  {
+   "it": 2,
+   "ptok": 10869,
+   "ctok": 1829,
+   "cached": true,
+   "latency": 215.92608308792114,
+   "tokens_cum": 17698
+  },
+  {
+   "it": 3,
+   "ptok": 10869,
+   "ctok": 1787,
+   "cached": true,
+   "latency": 260.24394178390503,
+   "tokens_cum": 30354
+  }
+ ],
+ "falsify": true,
+ "minimize": true,
+ "remedy": true,
+ "seed": 1,
+ "lint_fixes": 0,
+ "episodes": 2712,
+ "tune_budget": 24
+}

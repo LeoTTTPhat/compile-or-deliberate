@@ -1,0 +1,112 @@
+{
+ "name": "B100000",
+ "tokens": 101827,
+ "calls": 9,
+ "best_it": 1,
+ "best_sr": 0.8947368421052632,
+ "best_score": 0.8405701754385965,
+ "table": "A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 17/27",
+ "loc": 32,
+ "rules": [
+  "COOLING_WATER_VALVE_STUCK",
+  "GRADE_DEV",
+  "NO_ACTION",
+  "PRESSURE_APPROACHING_TRIP",
+  "PRESSURE_HI",
+  "PRESSURE_HIHI",
+  "PRESSURE_SENSOR_FAULT",
+  "RATE_DEV",
+  "RLEVEL_HI",
+  "RLEVEL_LO",
+  "SLEVEL_HI",
+  "SLEVEL_LO",
+  "TEMP_HI",
+  "TEMP_HIHI",
+  "TEMP_SENSOR_FAULT",
+  "TRIP_VIOLATION"
+ ],
+ "batch_size": 95,
+ "model": "qwen3-coder:30b",
+ "prompt_hash": "75ea6b0352e43542",
+ "history": [
+  {
+   "it": 0,
+   "ptok": 3548,
+   "ctok": 1452,
+   "cached": true,
+   "latency": 297.32283091545105,
+   "tokens_cum": 5000
+  },
+  {
+   "it": 2,
+   "ptok": 10682,
+   "ctok": 1980,
+   "cached": false,
+   "latency": 142.4570608139038,
+   "tokens_cum": 17662
+  },
+  {
+   "it": 3,
+   "ptok": 10682,
+   "ctok": 2168,
+   "cached": false,
+   "latency": 130.9950032234192,
+   "tokens_cum": 30512
+  },
+  {
+   "it": 4,
+   "ptok": 10718,
+   "ctok": 1865,
+   "cached": false,
+   "latency": 42.83713102340698,
+   "tokens_cum": 43095
+  },
+  {
+   "it": 5,
+   "ptok": 10059,
+   "ctok": 1475,
+   "cached": false,
+   "latency": 71.30429077148438,
+   "tokens_cum": 54629
+  },
+  {
+   "it": 6,
+   "ptok": 10059,
+   "ctok": 1978,
+   "cached": false,
+   "latency": 121.66757822036743,
+   "tokens_cum": 66666
+  },
+  {
+   "it": 7,
+   "ptok": 10129,
+   "ctok": 1495,
+   "cached": false,
+   "latency": 69.61120080947876,
+   "tokens_cum": 78290
+  },
+  {
+   "it": 8,
+   "ptok": 10059,
+   "ctok": 1680,
+   "cached": false,
+   "latency": 32.33785676956177,
+   "tokens_cum": 90029
+  },
+  {
+   "it": 9,
+   "ptok": 10129,
+   "ctok": 1669,
+   "cached": false,
+   "latency": 28.552000045776367,
+   "tokens_cum": 101827
+  }
+ ],
+ "falsify": true,
+ "minimize": true,
+ "remedy": false,
+ "seed": 1,
+ "lint_fixes": 0,
+ "episodes": 8433,
+ "tune_budget": 24
+}

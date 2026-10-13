@@ -1,0 +1,11 @@
+calibration-only from main_qwen3-coder-30b_s2/playbook_v0.py; batch 78; rounds 8
+[v0] sr=0.359 score=0.340 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 10/20
+  checkpoint v0: tokens=5008 best it=1 sr=0.359 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 10/20
+  falsification round 1: incumbent failed 19/48 fresh scenarios; batch -> 97
+    tune: P_slope 0.1 -> 0.4 -> 0.309
+  tuned incumbent: 0.289 -> 0.309 (24 batch evals, CPU only)
+  checkpoint R1: tokens=5008 best it=1 sr=0.309 A: 12/12, P: 4/21, Q: 0/12, S: 2/28, SN: 12/24
+  falsification round 2: incumbent failed 20/48 fresh scenarios; batch -> 117
+  checkpoint R2: tokens=5008 best it=1 sr=0.256 A: 12/12, P: 4/30, Q: 0/12, S: 2/38, SN: 12/25
+  falsification round 3: incumbent failed 16/48 fresh scenarios; batch -> 133
+stopped by the authors after the checkpoints listed (R1 is used in the paper); 2026-10-11

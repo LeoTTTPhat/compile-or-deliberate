@@ -1,0 +1,70 @@
+{
+ "name": "B25000",
+ "tokens": 32345,
+ "calls": 3,
+ "best_it": 2,
+ "best_sr": 0.75,
+ "best_score": 0.6925,
+ "table": "A: 11/12, P: 16/16, Q: 12/12, S: 13/19, SN: 11/25",
+ "loc": 50,
+ "rules": [
+  "feed_composition_upset",
+  "grade_deviation",
+  "pressure_drift",
+  "pressure_high",
+  "pressure_hihi",
+  "pressure_low",
+  "pressure_sensor_fault",
+  "pressure_trending_hihi",
+  "rate_deviation",
+  "reactor_level_hi",
+  "reactor_level_lo",
+  "separator_level_hi",
+  "separator_level_lo",
+  "separator_temp_sensor_fault",
+  "stripper_level_hi",
+  "stripper_level_lo",
+  "stripper_pressure_sensor_fault",
+  "temp_hihi",
+  "temp_trending_hihi",
+  "temperature_drift",
+  "temperature_high",
+  "temperature_low",
+  "temperature_sensor_fault",
+  "trip_violation"
+ ],
+ "batch_size": 84,
+ "model": "qwen3-coder:30b",
+ "prompt_hash": "75ea6b0352e43542",
+ "history": [
+  {
+   "it": 0,
+   "ptok": 3548,
+   "ctok": 1776,
+   "cached": true,
+   "latency": 385.5534770488739,
+   "tokens_cum": 5324
+  },
+  {
+   "it": 2,
+   "ptok": 10710,
+   "ctok": 2335,
+   "cached": false,
+   "latency": 252.7960340976715,
+   "tokens_cum": 18369
+  },
+  {
+   "it": 3,
+   "ptok": 11108,
+   "ctok": 2868,
+   "cached": false,
+   "latency": 312.05331921577454,
+   "tokens_cum": 32345
+  }
+ ],
+ "falsify": true,
+ "minimize": true,
+ "remedy": true,
+ "seed": 3,
+ "lint_fixes": 0
+}

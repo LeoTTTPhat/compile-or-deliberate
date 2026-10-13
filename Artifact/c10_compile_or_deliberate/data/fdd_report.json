@@ -1,0 +1,147 @@
+{
+ "fdd": {
+  "n_rows": 6319,
+  "n_scenarios": 360,
+  "accuracy": 0.987814527615129,
+  "accuracy_visible": 0.9920166054606419,
+  "macro_f1": 0.9880211403122615,
+  "recall": {
+   "none": 0.9843430905377808,
+   "composition": 0.9715261958997722,
+   "feed_loss": 0.9902826855123675,
+   "grade": 1.0,
+   "sensor_P": 0.9924812030075187,
+   "sensor_T": 0.9834834834834835
+  },
+  "confusion": {
+   "labels": [
+    "none",
+    "composition",
+    "feed_loss",
+    "grade",
+    "sensor_P",
+    "sensor_T"
+   ],
+   "matrix": [
+    [
+     1446,
+     20,
+     0,
+     1,
+     0,
+     2
+    ],
+    [
+     25,
+     853,
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     5,
+     6,
+     1121,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     1243,
+     0,
+     0
+    ],
+    [
+     7,
+     0,
+     0,
+     0,
+     924,
+     0
+    ],
+    [
+     11,
+     0,
+     0,
+     0,
+     0,
+     655
+    ]
+   ]
+  },
+  "accuracy_passive": 0.9807692307692307,
+  "accuracy_post_recovery": 0.998414585810543,
+  "episode_lookup": {
+   "thr=0.5": {
+    "thr": 0.5,
+    "fault_eps": 270,
+    "fault_first_correct": 270,
+    "fault_never": 0,
+    "none_eps": 90,
+    "none_false_act": 8
+   },
+   "thr=0.6": {
+    "thr": 0.6,
+    "fault_eps": 270,
+    "fault_first_correct": 269,
+    "fault_never": 1,
+    "none_eps": 90,
+    "none_false_act": 5
+   },
+   "thr=0.8": {
+    "thr": 0.8,
+    "fault_eps": 270,
+    "fault_first_correct": 269,
+    "fault_never": 1,
+    "none_eps": 90,
+    "none_false_act": 5
+   }
+  }
+ },
+ "novelty": {
+  "threshold": 8.68000283582781,
+  "alpha": 0.05,
+  "n_ref": 3534,
+  "n_cal": 1473,
+  "heldout_synthesis": {
+   "rows": 1312,
+   "episodes": 129,
+   "row_rate": 0.0350609756097561,
+   "row_rate_pre_onset": 0.0,
+   "row_rate_post_onset": 0.03975799481417459,
+   "episode_any_flag": 0.13178294573643412,
+   "episode_any_flag_post_onset": 0.13709677419354838
+  },
+  "heldout_synthesis_passive": {
+   "rows": 773,
+   "episodes": 72,
+   "row_rate": 0.015523932729624839,
+   "row_rate_pre_onset": 0.0,
+   "row_rate_post_onset": 0.019417475728155338,
+   "episode_any_flag": 0.06944444444444445,
+   "episode_any_flag_post_onset": 0.07462686567164178
+  },
+  "heldout_family_C": {
+   "rows": 122,
+   "episodes": 15,
+   "row_rate": 0.39344262295081966,
+   "row_rate_pre_onset": 0.0,
+   "row_rate_post_onset": 0.4897959183673469,
+   "episode_any_flag": 0.8,
+   "episode_any_flag_post_onset": 0.8
+  },
+  "heldout_family_V": {
+   "rows": 103,
+   "episodes": 15,
+   "row_rate": 0.6019417475728155,
+   "row_rate_pre_onset": 0.0,
+   "row_rate_post_onset": 0.7380952380952381,
+   "episode_any_flag": 0.9333333333333333,
+   "episode_any_flag_post_onset": 0.9333333333333333
+  }
+ }
+}

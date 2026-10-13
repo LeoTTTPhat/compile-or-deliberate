@@ -1,0 +1,13 @@
+training batch: 78 scenarios; model qwen2.5-coder:7b; seed 1; budget 400000
+[it 1] v0 sr=0.308 score=0.103 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 6/20 tokens=6860 (69s)
+  checkpoint v0: tokens=6860 best it=1 sr=0.308 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 6/20
+[it 2] child sr=0.282 score=0.092 A: 10/12, P: 2/16, Q: 0/12, S: 2/18, SN: 8/20 | best 0.308 tokens=22047 (272s)
+  [it 3] invalid playbook after 2 fixes: the sandbox checker rejected it: syntax error: unterminated string literal (detected at line 407) (<unknown>, line 407)
+  checkpoint B25000: tokens=73663 best it=1 sr=0.308 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 6/20
+  checkpoint B50000: tokens=73663 best it=1 sr=0.308 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 6/20
+[it 4] child sr=0.282 score=0.092 A: 10/12, P: 2/16, Q: 0/12, S: 2/18, SN: 8/20 | best 0.308 tokens=105631 (1472s)
+  checkpoint B100000: tokens=105631 best it=1 sr=0.308 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 6/20
+  [it 5] invalid playbook after 2 fixes: the sandbox checker rejected it: syntax error: invalid syntax (<unknown>, line 1)
+[it 6] child sr=0.308 score=0.103 A: 12/12, P: 4/16, Q: 0/12, S: 2/18, SN: 6/20 | best 0.308 tokens=172997 (2306s)
+  falsification round 1: incumbent failed 17/48 fresh scenarios; batch -> 95
+[it 7] child sr=0.242 score=0.052 A: 10/12, P: 2/19, Q: 0/12, S: 2/27, SN: 9/25 | best 0.242 tokens=187748 (2607s)

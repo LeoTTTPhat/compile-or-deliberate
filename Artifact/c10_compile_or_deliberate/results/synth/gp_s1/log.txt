@@ -1,0 +1,26 @@
+training batch: 78 scenarios; GP seed 1; budget 20000 episode evaluations; pop 24; workers 8
+[gen 0] best sr=0.859 score=0.819 rules=2 A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 9/20 | mean score 0.442 | evals=1872 batch=78 (447s)
+  checkpoint g0: evals=1872 best gen=0 sr=0.859 A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 9/20
+  checkpoint E2500: evals=2496 best gen=0 sr=0.859 A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 9/20
+[gen 1] best sr=0.949 score=0.911 rules=2 A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 16/20 | mean score 0.565 | evals=3588 batch=78 (882s)
+  falsification round 1: incumbent failed 2/48 fresh scenarios; batch -> 80
+  checkpoint E5000: evals=4962 best gen=1 sr=0.925 A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 16/22
+[gen 2] best sr=0.925 score=0.888 rules=2 A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 16/22 | mean score 0.645 | evals=5362 batch=80 (1730s)
+  falsification round 2: incumbent failed 3/48 fresh scenarios; batch -> 83
+[gen 3] best sr=0.892 score=0.854 rules=2 A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 16/25 | mean score 0.679 | evals=7305 batch=83 (2225s)
+  falsification round 3: incumbent failed 3/48 fresh scenarios; batch -> 86
+[gen 4] best sr=0.942 score=0.881 rules=4 A: 12/12, P: 16/16, Q: 12/12, S: 13/18, SN: 28/28 | mean score 0.688 | evals=9151 batch=86 (2636s)
+  falsification round 4: incumbent failed 4/48 fresh scenarios; batch -> 90
+  checkpoint E10000: evals=9921 best gen=4 sr=0.900 A: 12/13, P: 16/16, Q: 12/12, S: 13/21, SN: 28/28
+[gen 5] best sr=0.944 score=0.883 rules=4 A: 12/13, P: 16/16, Q: 12/12, S: 17/21, SN: 28/28 | mean score 0.719 | evals=11271 batch=90 (3055s)
+  falsification round 5: incumbent failed 7/48 fresh scenarios; batch -> 97
+[gen 6] best sr=0.876 score=0.838 rules=2 A: 14/14, P: 17/17, Q: 12/12, S: 26/26, SN: 16/28 | mean score 0.698 | evals=13614 batch=97 (3485s)
+  falsification round 6: incumbent failed 3/48 fresh scenarios; batch -> 100
+[gen 7] best sr=0.880 score=0.819 rules=6 A: 12/14, P: 16/17, Q: 12/12, S: 19/26, SN: 29/31 | mean score 0.732 | evals=15931 batch=100 (3955s)
+  falsification round 7: incumbent failed 4/48 fresh scenarios; batch -> 104
+[gen 8] best sr=0.981 score=0.900 rules=8 A: 15/15, P: 17/17, Q: 12/12, S: 29/29, SN: 29/31 | mean score 0.745 | evals=18255 batch=104 (4468s)
+  falsification round 8: incumbent failed 0/48 fresh scenarios; batch -> 104
+[gen 9] best sr=0.981 score=0.900 rules=8 A: 15/15, P: 17/17, Q: 12/12, S: 29/29, SN: 29/31 | mean score 0.818 | evals=19967 batch=104 (4808s)
+  checkpoint E20000: evals=19967 best gen=8 sr=0.981 A: 15/15, P: 17/17, Q: 12/12, S: 29/29, SN: 29/31
+  checkpoint final: evals=19967 best gen=8 sr=0.981 A: 15/15, P: 17/17, Q: 12/12, S: 29/29, SN: 29/31
+DONE best gen=8 sr=0.981 score=0.900 rules=8 evals=19967 label_evals=27 generations=9

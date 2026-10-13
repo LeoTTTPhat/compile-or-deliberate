@@ -1,0 +1,72 @@
+{
+ "name": "E2500",
+ "method": "gp",
+ "evals": 2496,
+ "label_evals": 0,
+ "generation": 1,
+ "best_gen": 1,
+ "best_evals_at_birth": 1872,
+ "best_sr": 0.8461538461538461,
+ "best_score": 0.8061538461538461,
+ "table": "A: 12/12, P: 16/16, Q: 12/12, S: 18/18, SN: 8/20",
+ "loc": 14,
+ "rules": [
+  "R1",
+  "R2"
+ ],
+ "n_rules": 2,
+ "genome": [
+  {
+   "atoms": [
+    [
+     "alarm",
+     "GRADE_DEV",
+     "not",
+     0.0
+    ]
+   ],
+   "action": "min_stable_park"
+  },
+  {
+   "atoms": [
+    [
+     "num",
+     "P_resid",
+     "<",
+     30.778
+    ]
+   ],
+   "action": "arm_composition"
+  }
+ ],
+ "batch_size": 78,
+ "seed": 2,
+ "budget_evals": 20000,
+ "wall_s": 545.4626309871674,
+ "ga": {
+  "pop_size": 24,
+  "elite": 2,
+  "tournament": 3,
+  "p_crossover": 0.7,
+  "p_mutation": 0.9,
+  "max_rules": 8,
+  "falsify": true,
+  "falsify_every": 1,
+  "falsify_n": 48,
+  "batch_cap": 140
+ },
+ "history": [
+  {
+   "gen": 0,
+   "evals": 1872,
+   "label_evals": 0,
+   "best_score": 0.7676923076923077,
+   "best_sr": 0.8076923076923077,
+   "mean_score": 0.41602831196581197,
+   "best_rules": 4,
+   "batch": 78,
+   "wall_s": 418.5
+  }
+ ],
+ "falsification": []
+}

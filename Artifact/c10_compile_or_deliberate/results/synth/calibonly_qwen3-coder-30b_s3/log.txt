@@ -1,0 +1,9 @@
+calibration-only from main_qwen3-coder-30b_s3/playbook_v0.py; batch 78; rounds 6
+[v0] sr=0.769 score=0.731 A: 12/12, P: 16/16, Q: 12/12, S: 14/18, SN: 6/20
+  checkpoint v0: tokens=5324 best it=1 sr=0.769 A: 12/12, P: 16/16, Q: 12/12, S: 14/18, SN: 6/20
+  falsification round 1: incumbent failed 6/48 fresh scenarios; batch -> 84
+    tune: P_resid 100 -> 400 -> 0.714
+  tuned incumbent: 0.714 -> 0.714 (24 batch evals, CPU only)
+  checkpoint R1: tokens=5324 best it=1 sr=0.714 A: 12/12, P: 16/16, Q: 12/12, S: 14/19, SN: 6/25
+  falsification round 2: incumbent failed 5/48 fresh scenarios; batch -> 89
+external watchdog (WWW27 project_watchdog.py, reason project_ceiling_200GB) terminated this run during round 2 at 2026-10-11 08:55; two restarts were killed the same way; R1 is the last complete checkpoint

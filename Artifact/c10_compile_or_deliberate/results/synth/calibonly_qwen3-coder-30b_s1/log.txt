@@ -1,0 +1,11 @@
+calibration-only from main_qwen3-coder-30b_s1/playbook_v0.py; batch 78; rounds 12
+[v0] sr=0.641 score=0.585 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20
+  checkpoint v0: tokens=5000 best it=1 sr=0.641 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20
+  falsification round 1: incumbent failed 12/48 fresh scenarios; batch -> 90
+    tune: moved rule block 13 ['PRESSURE_APPROACHING_TRIP'] to front -> 0.933
+    tune: P_resid 50 -> 75 -> 0.933
+  tuned incumbent: 0.556 -> 0.933 (24 batch evals, CPU only)
+  checkpoint R1: tokens=5000 best it=1 sr=0.933 A: 12/12, P: 17/17, Q: 12/12, S: 27/27, SN: 16/22
+  falsification round 2: incumbent failed 3/48 fresh scenarios; batch -> 93
+    tune: moved rule block 2 ['PRESSURE_HIHI'] to front -> 0.914
+stopped by the authors after the checkpoints listed (R1 is used in the paper); 2026-10-11

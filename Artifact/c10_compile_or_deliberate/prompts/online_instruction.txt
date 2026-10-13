@@ -1,0 +1,1 @@
+Decide the single best supervisory action now. Reply with JSON only: {"diagnosis": <one of the vocabulary>, "rationale": <at most 15 words>, "action": <one action object>}. If the regulatory layer is coping, use {"type": "no_action"}.

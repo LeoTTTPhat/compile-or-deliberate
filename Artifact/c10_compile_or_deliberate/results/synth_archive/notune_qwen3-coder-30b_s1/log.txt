@@ -1,0 +1,12 @@
+training batch: 78 scenarios; model qwen3-coder:30b; seed 1; budget 400000
+[it 1] v0 sr=0.641 score=0.585 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20 tokens=5000 (62s)
+  checkpoint v0: tokens=5000 best it=1 sr=0.641 A: 12/12, P: 8/16, Q: 12/12, S: 2/18, SN: 16/20
+[it 2] child sr=0.551 score=0.487 A: 11/12, P: 3/16, Q: 12/12, S: 1/18, SN: 16/20 | best 0.641 tokens=17698 (323s)
+[it 3] child sr=0.692 score=0.636 A: 12/12, P: 7/16, Q: 12/12, S: 5/18, SN: 18/20 | best 0.692 tokens=30354 (623s)
+  falsification round 1: incumbent failed 12/48 fresh scenarios; batch -> 90
+  checkpoint B25000: tokens=30354 best it=3 sr=0.600 A: 12/12, P: 7/20, Q: 12/12, S: 5/25, SN: 18/21
+[it 4] child sr=0.589 score=0.529 A: 12/12, P: 11/20, Q: 12/12, S: 2/25, SN: 16/21 | best 0.600 tokens=43104 (4117s)
+[it 5] child sr=0.600 score=0.540 A: 12/12, P: 7/20, Q: 12/12, S: 5/25, SN: 18/21 | best 0.600 tokens=56083 (4577s)
+  checkpoint B50000: tokens=56083 best it=3 sr=0.600 A: 12/12, P: 7/20, Q: 12/12, S: 5/25, SN: 18/21
+[it 6] child sr=0.611 score=0.551 A: 12/12, P: 8/20, Q: 12/12, S: 5/25, SN: 18/21 | best 0.611 tokens=69306 (5024s)
+  falsification round 2: incumbent failed 14/48 fresh scenarios; batch -> 104
